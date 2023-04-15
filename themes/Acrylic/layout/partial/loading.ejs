@@ -1,8 +1,9 @@
 <div id="loading-box" onclick="preloader.endLoading();" class style="zoom: 1;">
     <div class="loading-bg">
-        <img class="loading-img nolazyload" alt="loading image"
-            src="<%= theme.site.icon %>">
-        </div>
+        <div class="loading-bg-left"></div>
+        <div class="loading-bg-right"></div>
+        <img class="loading-img nolazyload" alt="loading image" src="<%= theme.site.icon %>">
+    </div>
 </div>
 <script>
     const preloader = {
@@ -16,9 +17,15 @@
             document.getElementById('body').classList = 'pace-done'
         }
     }
-    window.addEventListener('load',()=> { preloader.endLoading() })
-    document.addEventListener('pjax:send', () => { preloader.initLoading() })
-    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+    window.addEventListener('load', () => {
+        preloader.endLoading()
+    })
+    document.addEventListener('pjax:send', () => {
+        preloader.initLoading()
+    })
+    document.addEventListener('pjax:complete', () => {
+        preloader.endLoading()
+    })
 </script>
 <style>
     #loading-box {
@@ -30,7 +37,6 @@
         width: 100%;
         height: 100%;
         position: fixed;
-        background: var(--heo-background);
         z-index: 1999;
         opacity: 1;
         transition: 0.2s;
@@ -52,6 +58,38 @@
         animation-iteration-count: infinite;
         animation-direction: alternate;
     }
+
+    #loading-box .loading-bg .loading-bg-left,
+    #loading-box .loading-bg .loading-bg-right {
+        width: 50%;
+        height: 100%;
+        background: var(--heo-background);
+        position: absolute;
+        top: 0;
+    }
+
+    #loading-box .loading-bg .loading-bg-left {
+        left: 0px;
+        /* animation: slideLeftShowLoading 0.3s 0s backwards; */
+    }
+
+    #loading-box .loading-bg .loading-bg-right {
+        right: 0px;
+        /* animation: slideRightShowLoading 0.3s 0s backwards; */
+    }
+
+    #loading-box.loaded .loading-bg .loading-bg-left {
+        pointer-events: none;
+        transition: 0.2s;
+        animation: slideLeftHiddenLoading 0.3s 0s forwards;
+    }
+
+    #loading-box.loaded .loading-bg .loading-bg-right {
+        pointer-events: none;
+        transition: 0.2s;
+        animation: slideRightHiddenLoading 0.3s 0s forwards;
+    }
+
 
     @keyframes loadingAction {
         from {
@@ -80,6 +118,46 @@
 
         to {
             opacity: 1;
+        }
+    }
+
+    @keyframes slideLeftShowLoading {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes slideRightShowLoading {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes slideLeftHiddenLoading {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes slideRightHiddenLoading {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(100%);
         }
     }
 </style>

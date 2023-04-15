@@ -56,6 +56,7 @@ nav:
     travellings: true #开往
     random: true #
     console: true #控制台
+    search: true
 
 # heo式顶部一大坨
 hometop:
@@ -106,21 +107,21 @@ hometop:
     G1:
       name: 技术分享
       icon: fas fa-dove
-      url: /tags/技术分享/
+      url: /categories/技术分享/
     G2:
       name: 热门文章
       icon: fas fa-burn
-      url: /tags/热门/
+      url: /categories/热门/
     G3:
       name: 经验日常
       icon: fas fa-book
-      url: /tags/经验日常/
+      url: /categories/经验日常/
 
   recommendList:
     sup: 记录生活
     title: 生活的点点滴滴
     url: /
-    img: /img/acrylic.png
+    img: /img/hello.jpg
     color: '#006a73'
 
 # 个人卡片
@@ -157,7 +158,7 @@ aside:
     backface:
       title: 扫一扫
       desc: 获取最新信息和帮助
-      img: /img/qqgroup.png
+      img: /img/hello.jpg
 
   toc:
     post: true
@@ -239,7 +240,7 @@ post:
     alipay:
     url:
   covercolor: #文章cover取色
-    enable: true
+    enable: false
     local: false
 
 # 关于界面
@@ -254,20 +255,20 @@ errorpage:
 # 懒加载
 lazyload:
   enable: false
-  placeholder: /img/loading.gif
-  errorimg: /img/loading.gif
+  placeholder: /img/hello.jpg
+  errorimg: /img/hello.jpg
 
 # 图片灯箱
 lightbox: true
 
 #代码高亮增强
 hightlight:
-  enable: false
-  hightlimit: 200
+  enable: true
+  hightlimit: 0
 
 # 加载动画
 loading:
-  fullpage: false
+  fullpage: true
   pace: false
 
 # 第三方设置
@@ -304,7 +305,16 @@ comment:
 extends:
   head:
   # 在head中插入
-  # - <script></script>
+  # google广告
+  - <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6196731311387769" crossorigin="anonymous"></script>
+  # google分析
+  - <script async src="https://www.googletagmanager.com/gtag/js?id=G-4Z2RNVGTPW"></script>
+  - <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-4Z2RNVGTPW');</script>
+
+  # 百度统计
+  - <script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?8e82a96ae358141110c3b185c605ee1a";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script>
+
+
   body: # 在body中插入
 
 # 非必要勿动
