@@ -1,6 +1,6 @@
 ---
 title: '导入公用less文件 | Vue、Vite如何导入公用Less文件？'
-date: '2023-04-10'
+date: '2021-09-23'
 categories: '技术分享'
 keywords: 'vue-vite-import-common-less'
 description: '学习如何在Vue和Vite项目中导入公用Less文件，避免重复代码和样式，提高开发效率。逐步指导如何配置和使用，让您的开发过程更顺畅。导入公用less文件的步骤和技巧。'

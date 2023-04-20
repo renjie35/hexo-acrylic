@@ -1,6 +1,6 @@
 ---
 title: '如何在Vue、Vite中使用postcss-px-to-viewport？'
-date: '2023-04-10'
+date: '2022-03-05'
 categories: '技术分享'
 keywords: 'vue-vite-use-postcss-px-to-viewport'
 description: '如何在Vue、Vite项目中使用postcss-px-to-viewport来实现项目的适配。'

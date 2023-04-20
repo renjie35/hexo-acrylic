@@ -1,6 +1,6 @@
 ---
 title: 'Vue3 provide inject如何通过injectKey保存类型'
-date: '2023-04-13'
+date: '2023-01-13'
 categories: '技术分享'
 keywords: 'vue3-ts-provide-inject-injectKey'
 description: '学习如何在Vue3中使用provide-inject来共享数据，并通过使用injectKey来保存类型，避免上下文丢失问题。'
