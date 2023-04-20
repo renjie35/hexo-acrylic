@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>归档 2023 | Neco</title>
+<title>Flex垂直主轴布局，固定高度 | 如何实现自适应宽度？ | Neco</title>
 <noscript>开启Javascript是必要的</noscript>
 <link rel="icon" type="image/x-icon" href="/img/avatar.webp">
 <link rel="apple-touch-icon" href="/img/avatar.webp">
 <meta name="apple-mobile-web-app-title" content="Neco">
 <link rel="bookmark" href="/img/avatar.webp">
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/avatar.webp">
-<meta name="description" content="">
+<meta name="description" content="学习如何使用Flex实现固定高度的垂直主轴布局，同时使宽度自适应。">
 <meta name="theme-color" content="#1C1C1F">
 <link rel="stylesheet" href="/css/var.css">
 <link rel="stylesheet" href="/css/main.css">
@@ -46,7 +46,7 @@
 
     <script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?8e82a96ae358141110c3b185c605ee1a";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script>
 
-<script>var GLOBALCONFIG = {"root":"/","runtime":"2023-04-14 00:00:00","lazyload":{"enable":false,"error":"/img/hello.jpg"},"hightlight":{"enable":true,"limit":0},"lightbox":true,"randomlinks":false,"lang":{"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早上好","noon":"中午好","afternoon":"下午好","night":"晚上好","goodnight":"晚安","iam":"!  我是"},"search":{"empty":"搜索结果为空","hit":"已为您找到 ${query} 条结果","placeholder":"输入关键词快速查找"}},"covercolor":false,"algolia":{"appId":"92QUH58Q2K","apiKey":"13c72f2deb089b266613c0d36f13dceb","indexName":"hizai"}};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":false,"is_page":false,"page":false};</script>
+<script>var GLOBALCONFIG = {"root":"/","runtime":"2023-04-14 00:00:00","lazyload":{"enable":false,"error":"/img/hello.jpg"},"hightlight":{"enable":true,"limit":0},"lightbox":true,"randomlinks":false,"lang":{"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早上好","noon":"中午好","afternoon":"下午好","night":"晚上好","goodnight":"晚安","iam":"!  我是"},"search":{"empty":"搜索结果为空","hit":"已为您找到 ${query} 条结果","placeholder":"输入关键词快速查找"}},"covercolor":false,"algolia":{"appId":"92QUH58Q2K","apiKey":"13c72f2deb089b266613c0d36f13dceb","indexName":"hizai"}};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":true,"is_page":false,"page":false,"toc":true,"comment":false};</script>
     <meta name="generator" content="Hexo 6.3.0"></head>
     <body id="body">
         
@@ -314,8 +314,8 @@
     </div>
 </div>    
         
-            <div class="page" id="body-wrap">
-                <header class="not-top-img" id="page-header">
+            <div class="post" id="body-wrap">
+                <header class="post-bg" id="page-header">
     <nav id="nav" class="show">
     <div id="nav-group">
         <div id="blog_name">
@@ -336,7 +336,7 @@
         </div>
         <div id="page-name-mask">
             <div id="page-name">
-                <a id="page-name-text" onclick="acrylic.toTop()">Neco</a>
+                <a id="page-name-text" onclick="acrylic.toTop()">Flex垂直主轴布局，固定高度 | 如何实现自适应宽度？</a>
             </div>
         </div>
         <div id="menus">
@@ -427,50 +427,167 @@
         </div>
     </div>
 </nav>
-        
-</header>
-                <main class="layout" id="content-inner">
-    <div id="archive">
-        <div class="article-sort-title">文章<sup>1</sup></div>
-        <div class="article-sort">
-            
-
     
-        <div class="article-sort-item year">2023</div>
-    
-    <div class="article-sort-item">
-        <a class="article-sort-item-img" href="/2023/01/13/vue3-ts-provide-inject-injectKey/" title="Vue3 provide inject如何通过injectKey保存类型">
-            <img src="/images/ts.webp"
-                alt="Vue3 provide inject如何通过injectKey保存类型">
-        </a>
-        <div class="article-sort-item-info">
-            <a class="article-sort-item-title" href="/2023/01/13/vue3-ts-provide-inject-injectKey/" title="Vue3 provide inject如何通过injectKey保存类型"
-                onclick="window.event.cancelBubble=true;">
-                Vue3 provide inject如何通过injectKey保存类型
+        <div class="coverdiv" id="coverdiv">
+    <img id="post-cover" class="nolazyload" src="/images/css.webp" alt="cover">
+</div>
+<div id="post-info">
+    <div id="post-firstinfo">
+        <div class="meta-firstline">
+            <a class="post-meta-original" title="该文章为原创文章，注意版权协议">
+                原创
             </a>
-            <div class="article-sort-item-tags">
+            <span class="post-meta-categories">
                 
-                    <a class="article-meta__tags" href="/tags/vue3/" onclick="window.event.cancelBubble=true;">
-                        <span class="tags-punctuation">#</span>
-                        vue3
-                    </a>
+                    <a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a>
                 
-                    <a class="article-meta__tags" href="/tags/typescript/" onclick="window.event.cancelBubble=true;">
-                        <span class="tags-punctuation">#</span>
-                        typescript
-                    </a>
-                
+            </span>
+            <div class="tag_share">
+                <div class="post-meta__tag-list">
+                    
+                        <a class="post-meta__tags" href="/tags/css/">
+                            <span class="tags-punctuation">#</span>
+                            <span class="tags-name">css</span>
+                        </a>
+                    
+                </div>
             </div>
         </div>
     </div>
-
+    <h1 class="post-title">Flex垂直主轴布局，固定高度 | 如何实现自适应宽度？</h1>
+    <div id="post-meta">
+        <div class="meta-secondline">
+            <span class="post-meta-date" title="发布于">
+                <i class="post-meta-icon fa-fw fas fa-calendar"></i>
+                <time datetime="2021-06-10T08:00:00+08:00"></time>
+            </span>
+            
+                <span class="post-meta-date" title="更新于">
+                    <i class="post-meta-icon fa-solid fa-clock-rotate-left"></i>
+                    <time datetime="2023-04-20T15:59:49+08:00"></time>
+                </span>
+            
+            
+                <span class="post-meta-position" title="作者IP归属地为苏州">
+                    <i class="fas fa-location-dot post-meta-icon"></i>
+                    <span>苏州</span>
+                </span>
+            
+            
+            
+                
         </div>
-        <nav id="pagination">
-    <div class="pagination">
-        
-        <span class="page-number current">1</span>
     </div>
+</div>
+<section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg"
+    xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+        <path id="gentle-wave"
+            d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path>
+    </defs>
+    <g class="parallax">
+        <use href="#gentle-wave" x="48" y="0"></use>
+        <use href="#gentle-wave" x="48" y="3"></use>
+        <use href="#gentle-wave" x="48" y="5"></use>
+        <use href="#gentle-wave" x="48" y="7"></use>
+    </g>
+</svg>
+</section>
+        
+</header>
+                <main class="layout" id="content-inner">
+    <div id="post">
+        <article class="post-content" id="article-container">
+            <p>由于直接使用<code>flex-direction: column;</code>会导致高度坍塌</p>
+<p>所以这边使用<code>writing-mode: vertical-lr;</code>来实现垂直布局, 由于<code>writing-mode</code>的垂直布局会导致子元素内容改变行进方向，所以这边使用<code>writing-mode: horizontal-tb;</code>来实现将子元素摆正</p>
+<p>以下是 demo：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">  <span class="selector-class">.items</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: inline-flex;</span><br><span class="line">    <span class="attribute">writing-mode</span>: vertical-lr;</span><br><span class="line">    <span class="attribute">flex-wrap</span>: wrap;</span><br><span class="line">    <span class="attribute">align-content</span>: flex-start;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">350px</span>;</span><br><span class="line">    <span class="attribute">background</span>: blue;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.item</span> &#123;</span><br><span class="line">    <span class="attribute">writing-mode</span>: horizontal-tb;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">150px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background</span>: red;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">2px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;items&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+        </article>
+        <div class="post-tools" id="post-tools">
+            <div class="post-tools-left">
+                
+                <div class="share-link mobile">
+    <div class="share-qrcode">
+        <div class="share-button" title="使用手机访问这篇文章">
+            <i class="fas fa-qrcode"></i>
+        </div>
+        <div class="share-main">
+            <div class="share-main-all">
+                <div id="qrcode" title="http://localhost:4000/2021/06/10/flex-fixed-height-width/">
+                </div>
+                <div class="reward-dec">使用手机访问这篇文章</div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            new QRCode(document.getElementById("qrcode"), "http://localhost:4000/2021/06/10/flex-fixed-height-width/");
+        </script>
+    </div>
+</div>
+                <div class="share-link weibo"><a class="share-button" target="_blank"
+    href="https://service.weibo.com/share/share.php?title=Flex垂直主轴布局，固定高度 | 如何实现自适应宽度？&amp;url=http://localhost:4000/2021/06/10/flex-fixed-height-width/&amp;pic=/images/css.webp"
+    title="分享到微博" rel="noopener external nofollow noreferrer noopener">
+    <i class="fab fa-weibo" style="font-size:22px"></i>
+</a>
+</div>
+<div class="share-link copyurl">
+<div class="share-button" id="post-share-url" title="复制链接" onclick="acrylic.copyPageUrl()">
+    <i class="fas fa-link"></i>
+</div>
+</div>
+            </div>
+            <div class="post-tools-right">
+                <div class="tag_share">
+                    <div class="post-meta__tag-list">
+                        
+                            <a href="/tags/css/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                css
+                                <span class="tagsPageCount">1</span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-copyright">
+    <div class="post-copyright__author">
+        <a class="post-copyright__original" title="该文章为原创文章，注意版权协议">原创</a>
+        <a class="post-copyright-title" href="#">
+            <span>Flex垂直主轴布局，固定高度 | 如何实现自适应宽度？</span>
+        </a>
+    </div>
+    <div class="post-copyright__type">
+        <span class="post-copyright-info" id="post-copyright-url">
+            <a href="/2021/06/10/flex-fixed-height-width/">http://localhost:4000/2021/06/10/flex-fixed-height-width/</a>
+        </span>
+        <button class="post-copyright-copybtn" onclick="acrylic.copyPageUrl()">
+            <i class="fas fa-paste copy-btn"></i>
+        </button>
+    </div>
+    <div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用 <a
+                href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a> 协议，完整转载请注明来自 <a
+                href="/">Neco</a>
+            </span>
+        </div>
+</div>
+        <nav class="pagination-post" id="pagination">
+    
+                
+        
+            <div class="prev-post pull-full">
+                <a href="/2021/09/23/vue-vite-import-common-less/">
+                    <div class="pagination-info">
+                        <div class="label">上一篇</div>
+                        <div class="prev_info">导入公用less文件 | Vue、Vite如何导入公用Less文件？</div>
+                    </div>
+                </a>
+            </div>
+        
+    
 </nav>
+            
     </div>
     <div class="aside-content" id="aside-content">
     
@@ -499,29 +616,17 @@
 </div>
      
     
+    <div class="sticky_layout">
         
-        <div class="card-widget heo-right-widget" id="card-wechat" style="background: #0099FF ;">
-    <div id="flip-wrapper">
-        <div id="flip-content">
-            <div class="face">
-                <div class="left">
-                    <span class="title">QQ群</span>
-                    <span class="desc">加入官方QQ群与我们交流 <i class="fa-solid fa-play"></i></span>
-                </div>
-            </div>
-            <div class="back face">
-                <div class="left">
-                    <span class="title">扫一扫</span>
-                    <span class="desc">获取最新信息和帮助 <i class="fa-solid fa-play"></i></span>
-                </div>
-                <img class="nolazyload" src="/img/hello.jpg">
-            </div>
-        </div>
+            <div class="card-widget" id="card-toc">
+    <div class="item-headline">
+        <i class="fas fa-bars"></i>
+        <span>文章目录</span>
+    </div>
+    <div class="toc-content" id="toc-content">
+        
     </div>
 </div>
-     
-    
-    <div class="sticky_layout">
             
         
             
@@ -631,88 +736,10 @@
 </div>
      
         
-            
-        <div class="card-widget card-tags card-archives card-webinfo card-allinfo">
-    <div class="card-tag-cloud">
-    
-        <a href="/tags/javascript/" style="font-size: 0.8rem; color: #d3d3d3">javascript<sup>3</sup></a>
-    
-        <a href="/tags/vue3/" style="font-size: 0.8rem; color: #d3d3d3">vue3<sup>4</sup></a>
-    
-        <a href="/tags/vite/" style="font-size: 0.8rem; color: #d3d3d3">vite<sup>2</sup></a>
-    
-        <a href="/tags/css/" style="font-size: 0.8rem; color: #d3d3d3">css<sup>1</sup></a>
-    
-        <a href="/tags/typescript/" style="font-size: 0.8rem; color: #d3d3d3">typescript<sup>1</sup></a>
-    
-</div>
-    <ul class="card-archive-list">
-    
-        <li class="card-archive-list-item"><a class="card-archive-list-link" onclick="pjax.loadUrl('/archives/2021/')" data-pjax-state=""><span
-            class="card-archive-list-date">2021</span>
-            <div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span
-                    class="card-archive-list-count-unit">篇</span></div>
-            </a>
-        </li>
-    
-        <li class="card-archive-list-item"><a class="card-archive-list-link" onclick="pjax.loadUrl('/archives/2022/')" data-pjax-state=""><span
-            class="card-archive-list-date">2022</span>
-            <div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span
-                    class="card-archive-list-count-unit">篇</span></div>
-            </a>
-        </li>
-    
-        <li class="card-archive-list-item"><a class="card-archive-list-link" onclick="pjax.loadUrl('/archives/2023/')" data-pjax-state=""><span
-            class="card-archive-list-date">2023</span>
-            <div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span
-                    class="card-archive-list-count-unit">篇</span></div>
-            </a>
-        </li>
-        
-</ul>
-    <hr>
-    <div class="webinfo">
-    
-        <div class="webinfo-item">
-            <div class="webinfo-item-title">
-                <i class="item-icon fas fa-file-alt"></i>
-                <div class="item-name">文章总数 :</div>
-            </div>
-            <div class="item-count">5</div>
-        </div>
-    
-    
-        
-            <div class="webinfo-item">
-                <div class="webinfo-item-title">
-                    <i class="fa-solid fa-fire"></i>
-                    <div class="item-name">总访问数 :</div>
-                </div>
-                <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-pulse"></i></span>
-            </div>
-        
-        
-    
-    
-        <div class="webinfo-item">
-            <div class="webinfo-item-title">
-                <i class="item-icon fas fa-stopwatch"></i>
-                <div class="item-name">建站天数 :</div>
-            </div>
-            <div class="item-count" id="runtimeshow">
-            </div>
-        </div>
-    
-    
-    
-</div>
-</div>
-     
-        
     </div>
 </div>
  
-</main>     
+</main>
                 <footer id="footer">
                     <div id="footer_deal">
     
