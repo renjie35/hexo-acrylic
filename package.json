@@ -7,7 +7,8 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "algo": "hexo algolia"
+    "algo": "hexo algolia",
+    "prepare": "husky install"
   },
   "hexo": {
     "version": "6.3.0"
