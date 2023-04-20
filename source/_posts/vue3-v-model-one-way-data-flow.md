@@ -1,6 +1,6 @@
 ---
 title: 'Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流'
-date: '2022-09-10'
+date: '2022-09-09'
 categories: '技术分享'
 keywords: 'vue3-v-model-one-way-data-flow'
 description: '在Vue3中，当v-model传递给子组件时，如何在子组件中使用v-model属性而不破坏单向数据流？'
