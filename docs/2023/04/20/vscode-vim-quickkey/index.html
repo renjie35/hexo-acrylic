@@ -477,7 +477,7 @@
             
                 <span class="post-meta-date" title="更新于">
                     <i class="post-meta-icon fa-solid fa-clock-rotate-left"></i>
-                    <time datetime="2023-04-21T13:37:07+08:00"></time>
+                    <time datetime="2023-04-21T13:44:00+08:00"></time>
                 </span>
             
             
@@ -511,8 +511,7 @@
                 <main class="layout" id="content-inner">
     <div id="post">
         <article class="post-content" id="article-container">
-            <h2 id="VIM-快捷键查询"><a href="#VIM-快捷键查询" class="headerlink" title="VIM-快捷键查询"></a>VIM-快捷键查询</h2><p>###移动方向键盘</p>
-<table>
+            <h2 id="VIM-快捷键查询"><a href="#VIM-快捷键查询" class="headerlink" title="VIM-快捷键查询"></a>VIM-快捷键查询</h2><h3 id="移动方向键盘"><a href="#移动方向键盘" class="headerlink" title="移动方向键盘"></a>移动方向键盘</h3><table>
 <thead>
 <tr>
 <th align="center">快捷键</th>
@@ -580,8 +579,7 @@
 <td align="left">文件末尾</td>
 </tr>
 </tbody></table>
-<p>###文档查看</p>
-<table>
+<h3 id="文档查看"><a href="#文档查看" class="headerlink" title="文档查看"></a>文档查看</h3><table>
 <thead>
 <tr>
 <th align="center">快捷键</th>
@@ -613,8 +611,7 @@
 <td align="left">文档结尾</td>
 </tr>
 </tbody></table>
-<p>###插入文本</p>
-<table>
+<h3 id="插入文本"><a href="#插入文本" class="headerlink" title="插入文本"></a>插入文本</h3><table>
 <thead>
 <tr>
 <th align="center">快捷键</th>
@@ -646,8 +643,7 @@
 <td align="left">当前行替换插入</td>
 </tr>
 </tbody></table>
-<p>###删除文本</p>
-<table>
+<h3 id="删除文本"><a href="#删除文本" class="headerlink" title="删除文本"></a>删除文本</h3><table>
 <thead>
 <tr>
 <th align="center">快捷键</th>
@@ -687,8 +683,7 @@
 <td align="left">删除到文件末尾</td>
 </tr>
 </tbody></table>
-<p>###特殊操作</p>
-<table>
+<h3 id="特殊操作"><a href="#特殊操作" class="headerlink" title="特殊操作"></a>特殊操作</h3><table>
 <thead>
 <tr>
 <th align="center">快捷键</th>
@@ -732,8 +727,7 @@
 <td align="left">移动到上一个搜索结果</td>
 </tr>
 </tbody></table>
-<p>###选择文本</p>
-<table>
+<h3 id="选择文本"><a href="#选择文本" class="headerlink" title="选择文本"></a>选择文本</h3><table>
 <thead>
 <tr>
 <th align="center">快捷键</th>
@@ -753,8 +747,7 @@
 <td align="left">退出选中</td>
 </tr>
 </tbody></table>
-<p>###选中文本后操作</p>
-<table>
+<h3 id="选中文本后操作"><a href="#选中文本后操作" class="headerlink" title="选中文本后操作"></a>选中文本后操作</h3><table>
 <thead>
 <tr>
 <th align="center">快捷键</th>
@@ -786,7 +779,7 @@
 <ul>
 <li>方便键盘按键移动</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&quot;vim.normalModeKeyBindings&quot;: [</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;before&quot;: [&quot;H&quot;],</span><br><span class="line">      &quot;after&quot;: [&quot;^&quot;] //大写H 移动到行首（非空文字）</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;before&quot;: [&quot;L&quot;],</span><br><span class="line">      &quot;after&quot;: [&quot;g&quot;, &quot;_&quot;] //大写L 移动到行尾（非空文字）</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//setting.json</span></span><br><span class="line"><span class="attr">&quot;vim.normalModeKeyBindings&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;before&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;H&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;after&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;^&quot;</span><span class="punctuation">]</span> <span class="comment">//大写H 移动到行首（非空文字）</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;before&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;L&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;after&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;g&quot;</span><span class="punctuation">,</span> <span class="string">&quot;_&quot;</span><span class="punctuation">]</span> <span class="comment">//大写L 移动到行尾（非空文字）</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
         </article>
         <div class="post-tools" id="post-tools">
             <div class="post-tools-left">
@@ -913,7 +906,7 @@
         <span>文章目录</span>
     </div>
     <div class="toc-content" id="toc-content">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#VIM-%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%9F%A5%E8%AF%A2"><span class="toc-text">VIM-快捷键查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VSCode%E9%85%8D%E7%BD%AE"><span class="toc-text">VSCode配置</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#VIM-%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%9F%A5%E8%AF%A2"><span class="toc-text">VIM-快捷键查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E6%96%B9%E5%90%91%E9%94%AE%E7%9B%98"><span class="toc-text">移动方向键盘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%A1%A3%E6%9F%A5%E7%9C%8B"><span class="toc-text">文档查看</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%96%87%E6%9C%AC"><span class="toc-text">插入文本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E6%9C%AC"><span class="toc-text">删除文本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%93%8D%E4%BD%9C"><span class="toc-text">特殊操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E6%96%87%E6%9C%AC"><span class="toc-text">选择文本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E4%B8%AD%E6%96%87%E6%9C%AC%E5%90%8E%E6%93%8D%E4%BD%9C"><span class="toc-text">选中文本后操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VSCode%E9%85%8D%E7%BD%AE"><span class="toc-text">VSCode配置</span></a></li></ol>
     </div>
 </div>
             
