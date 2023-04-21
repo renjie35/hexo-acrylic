@@ -5,7 +5,7 @@ categories: 'Vue3'
 keywords: 'vue-vite-use-postcss-px-to-viewport'
 description: '如何在Vue、Vite项目中使用postcss-px-to-viewport来实现项目的适配。'
 cover: '/images/js.webp'
-tags: ['javascript', 'vue3', 'vite']
+tags: ['JavaScript', 'Vue3', 'Vite']
 ---
 
 vue3 可使用以下配置:

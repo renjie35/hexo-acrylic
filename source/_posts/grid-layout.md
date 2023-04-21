@@ -5,7 +5,7 @@ categories: 'CSS'
 keywords: 'layout-grid-flex'
 description: '学习如何使用Grid解决Flex难完成的布局。'
 cover: '/images/css.webp'
-tags: ['css']
+tags: ['CSS']
 ---
 
 

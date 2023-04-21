@@ -5,7 +5,7 @@ categories: 'Vue3'
 keywords: 'vue3-ts-provide-inject-injectKey'
 description: '学习如何在Vue3中使用provide-inject来共享数据，并通过使用injectKey来保存类型，避免上下文丢失问题。'
 cover: '/images/ts.webp'
-tags: ['typescript', 'vue3']
+tags: ['TypeScript', 'Vue3']
 ---
 
 # Vue3 provide inject 正常使用方式

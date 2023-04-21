@@ -5,7 +5,7 @@ categories: 'CSS'
 keywords: 'flex-fixed-height-width'
 description: '学习如何使用Flex实现固定高度的垂直主轴布局，同时使宽度自适应。'
 cover: '/images/css.webp'
-tags: ['css']
+tags: ['CSS']
 ---
 
 由于直接使用`flex-direction: column;`会导致高度坍塌
