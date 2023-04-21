@@ -15,24 +15,23 @@ tags: ['css']
 以下是 demo：
 
 ```css
-<style>
-  .items {
+.items {
     display: inline-flex;
     writing-mode: vertical-lr;
     flex-wrap: wrap;
     align-content: flex-start;
     height: 350px;
     background: blue;
-  }
-  .item {
-    writing-mode: horizontal-tb;
-    width: 150px;
-    height: 100px;
-    background: red;
-    margin: 2px;
-  }
-</style>
+}
+.item {
+	writing-mode: horizontal-tb;
+	width: 150px;
+	height: 100px;
+	background: red;
+	margin: 2px;
+}
 ```
+
 ```html
 <div class="items">
   <div class="item"></div>

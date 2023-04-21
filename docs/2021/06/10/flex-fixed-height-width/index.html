@@ -302,7 +302,7 @@
                     </a>
                 
                     <a href="/tags/css/" style="font-size: 1em; color: #d3d3d3">css
-                        <sup>1</sup>
+                        <sup>2</sup>
                     </a>
                 
                     <a href="/tags/typescript/" style="font-size: 1em; color: #d3d3d3">typescript
@@ -472,7 +472,7 @@
             
                 <span class="post-meta-date" title="更新于">
                     <i class="post-meta-icon fa-solid fa-clock-rotate-left"></i>
-                    <time datetime="2023-04-20T17:52:49+08:00"></time>
+                    <time datetime="2023-04-22T00:06:38+08:00"></time>
                 </span>
             
             
@@ -509,7 +509,8 @@
             <p>由于直接使用<code>flex-direction: column;</code>会导致高度坍塌</p>
 <p>所以这边使用<code>writing-mode: vertical-lr;</code>来实现垂直布局, 由于<code>writing-mode</code>的垂直布局会导致子元素内容改变行进方向，所以这边使用<code>writing-mode: horizontal-tb;</code>来实现将子元素摆正</p>
 <p>以下是 demo：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">  <span class="selector-class">.items</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: inline-flex;</span><br><span class="line">    <span class="attribute">writing-mode</span>: vertical-lr;</span><br><span class="line">    <span class="attribute">flex-wrap</span>: wrap;</span><br><span class="line">    <span class="attribute">align-content</span>: flex-start;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">350px</span>;</span><br><span class="line">    <span class="attribute">background</span>: blue;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.item</span> &#123;</span><br><span class="line">    <span class="attribute">writing-mode</span>: horizontal-tb;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">150px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background</span>: red;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">2px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.items</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: inline-flex;</span><br><span class="line">    <span class="attribute">writing-mode</span>: vertical-lr;</span><br><span class="line">    <span class="attribute">flex-wrap</span>: wrap;</span><br><span class="line">    <span class="attribute">align-content</span>: flex-start;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">350px</span>;</span><br><span class="line">    <span class="attribute">background</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">	<span class="attribute">writing-mode</span>: horizontal-tb;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">150px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">background</span>: red;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">2px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;items&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
         </article>
@@ -552,7 +553,7 @@
                             <a href="/tags/css/" class="post-meta__tags">
                                 <span class="tags-punctuation">#</span>
                                 css
-                                <span class="tagsPageCount">1</span>
+                                <span class="tagsPageCount">2</span>
                             </a>
                         
                     </div>
@@ -585,10 +586,10 @@
                 
         
             <div class="prev-post pull-full">
-                <a href="/2021/09/23/vue-vite-import-common-less/">
+                <a href="/2021/07/07/grid-layout/">
                     <div class="pagination-info">
                         <div class="label">上一篇</div>
-                        <div class="prev_info">导入公用less文件 | Vue、Vite如何导入公用Less文件？</div>
+                        <div class="prev_info">Grid布局 | 解决Flex布局难点？</div>
                     </div>
                 </a>
             </div>
@@ -897,4 +898,4 @@
     
     </body>
 </html>
-<script>const posts=["2023/04/20/vscode-vim-quickkey/","2023/01/17/vue3-ts-provide-inject-injectKey/","2022/09/08/vue3-v-model-one-way-data-flow/","2022/03/05/vue-vite-use-postcss-px-to-viewport/","2021/09/23/vue-vite-import-common-less/","2021/06/10/flex-fixed-height-width/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
+<script>const posts=["2023/04/20/vscode-vim-quickkey/","2023/01/17/vue3-ts-provide-inject-injectKey/","2022/09/08/vue3-v-model-one-way-data-flow/","2022/03/05/vue-vite-use-postcss-px-to-viewport/","2021/09/23/vue-vite-import-common-less/","2021/07/07/grid-layout/","2021/06/10/flex-fixed-height-width/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
