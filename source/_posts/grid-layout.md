@@ -13,32 +13,31 @@ tags: ['css']
 
 ```css
 .items {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, 200px);
-
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
 }
 
 .item {
-	margin: 0 auto;
-	width: 100%;
-	height: 100px;
-	background: red;
-	border: 1px solid;
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  background: red;
+  border: 1px solid;
 }
 ```
 
 ```html
 <div class="items">
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
 </div>
 ```
 
@@ -46,32 +45,32 @@ tags: ['css']
 
 ```css
 .items {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
 }
 
 .item {
-	margin: 0 auto;
-	width: 100%;
-	height: 100px;
-	background: red;
-	border: 1px solid;
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  background: red;
+  border: 1px solid;
 }
 ```
 
 ```html
 <div class="items">
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
 </div>
 ```
 
