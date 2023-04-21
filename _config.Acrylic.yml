@@ -105,17 +105,17 @@ hometop:
 
   categoryGroup:
     G1:
-      name: 技术分享
+      name: Vue3
       icon: fas fa-dove
-      url: /categories/技术分享/
+      url: /categories/Vue3/
     G2:
-      name: 热门文章
+      name: CSS
       icon: fas fa-burn
-      url: /categories/热门/
+      url: /categories/CSS/
     G3:
-      name: 经验日常
+      name: 工具分享
       icon: fas fa-book
-      url: /categories/经验日常/
+      url: /categories/工具分享/
 
   recommendList:
     sup: 记录生活

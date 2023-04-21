@@ -1,7 +1,7 @@
 ---
 title: 'Flex垂直主轴布局，固定高度 | 如何实现自适应宽度？'
 date: '2021-06-10'
-categories: '技术分享'
+categories: 'CSS'
 keywords: 'flex-fixed-height-width'
 description: '学习如何使用Flex实现固定高度的垂直主轴布局，同时使宽度自适应。'
 cover: '/images/css.webp'
