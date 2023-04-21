@@ -7,3 +7,4 @@ node_modules/
 _multiconfig.yml
 themes/Acrylic/.git/
 source/_posts/.obsidian
+.husky/
