@@ -5,7 +5,7 @@ categories: 'CSS'
 keywords: 'vue-vite-import-common-less'
 description: '学习如何在Vue和Vite项目中导入公用Less文件，避免重复代码和样式，提高开发效率。逐步指导如何配置和使用，让您的开发过程更顺畅。导入公用less文件的步骤和技巧。'
 cover: '/images/js.webp'
-tags: ['Javascript', 'Vue3', 'Vite']
+tags: ['JavaScript', 'Vue3', 'Vite']
 ---
 
 vue3 可使用以下配置:
