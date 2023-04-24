@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>导入公用less文件 | Vue、Vite如何导入公用Less文件？ | Neco</title>
+<title>Flex垂直主轴布局，固定高度 | 如何实现自适应宽度？ | Neco</title>
 <noscript>开启Javascript是必要的</noscript>
 <link rel="icon" type="image/x-icon" href="/img/avatar.webp">
 <link rel="apple-touch-icon" href="/img/avatar.webp">
 <meta name="apple-mobile-web-app-title" content="Neco">
 <link rel="bookmark" href="/img/avatar.webp">
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/avatar.webp">
-<meta name="description" content="学习如何在Vue和Vite项目中导入公用Less文件，避免重复代码和样式，提高开发效率。逐步指导如何配置和使用，让您的开发过程更顺畅。导入公用less文件的步骤和技巧。">
+<meta name="description" content="学习如何使用Flex实现固定高度的垂直主轴布局，同时使宽度自适应。">
 <meta name="theme-color" content="#1C1C1F">
 <link rel="stylesheet" href="/css/var.css">
 <link rel="stylesheet" href="/css/main.css">
@@ -289,16 +289,20 @@
             </div>
             <div class="card-tag-cloud">
                 
-                    <a href="/tags/VIM/" style="font-size: 1em; color: #d3d3d3">VIM
-                        <sup>1</sup>
-                    </a>
-                
                     <a href="/tags/CSS/" style="font-size: 1em; color: #d3d3d3">CSS
                         <sup>2</sup>
                     </a>
                 
+                    <a href="/tags/VIM/" style="font-size: 1em; color: #d3d3d3">VIM
+                        <sup>1</sup>
+                    </a>
+                
                     <a href="/tags/VSCode/" style="font-size: 1em; color: #d3d3d3">VSCode
                         <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/JavaScript/" style="font-size: 1em; color: #d3d3d3">JavaScript
+                        <sup>3</sup>
                     </a>
                 
                     <a href="/tags/Vue3/" style="font-size: 1em; color: #d3d3d3">Vue3
@@ -307,10 +311,6 @@
                 
                     <a href="/tags/Vite/" style="font-size: 1em; color: #d3d3d3">Vite
                         <sup>2</sup>
-                    </a>
-                
-                    <a href="/tags/JavaScript/" style="font-size: 1em; color: #d3d3d3">JavaScript
-                        <sup>3</sup>
                     </a>
                 
                     <a href="/tags/TypeScript/" style="font-size: 1em; color: #d3d3d3">TypeScript
@@ -344,7 +344,7 @@
         </div>
         <div id="page-name-mask">
             <div id="page-name">
-                <a id="page-name-text" onclick="acrylic.toTop()">导入公用less文件 | Vue、Vite如何导入公用Less文件？</a>
+                <a id="page-name-text" onclick="acrylic.toTop()">Flex垂直主轴布局，固定高度 | 如何实现自适应宽度？</a>
             </div>
         </div>
         <div id="menus">
@@ -437,7 +437,7 @@
 </nav>
     
         <div class="coverdiv" id="coverdiv">
-    <img id="post-cover" class="nolazyload" src="/images/js.webp" alt="cover">
+    <img id="post-cover" class="nolazyload" src="/images/css.webp" alt="cover">
 </div>
 <div id="post-info">
     <div id="post-firstinfo">
@@ -453,36 +453,26 @@
             <div class="tag_share">
                 <div class="post-meta__tag-list">
                     
-                        <a class="post-meta__tags" href="/tags/Vue3/">
+                        <a class="post-meta__tags" href="/tags/CSS/">
                             <span class="tags-punctuation">#</span>
-                            <span class="tags-name">Vue3</span>
-                        </a>
-                    
-                        <a class="post-meta__tags" href="/tags/Vite/">
-                            <span class="tags-punctuation">#</span>
-                            <span class="tags-name">Vite</span>
-                        </a>
-                    
-                        <a class="post-meta__tags" href="/tags/JavaScript/">
-                            <span class="tags-punctuation">#</span>
-                            <span class="tags-name">JavaScript</span>
+                            <span class="tags-name">CSS</span>
                         </a>
                     
                 </div>
             </div>
         </div>
     </div>
-    <h1 class="post-title">导入公用less文件 | Vue、Vite如何导入公用Less文件？</h1>
+    <h1 class="post-title">Flex垂直主轴布局，固定高度 | 如何实现自适应宽度？</h1>
     <div id="post-meta">
         <div class="meta-secondline">
             <span class="post-meta-date" title="发布于">
                 <i class="post-meta-icon fa-fw fas fa-calendar"></i>
-                <time datetime="2021-09-23T08:00:00+08:00"></time>
+                <time datetime="2021-06-10T08:00:00+08:00"></time>
             </span>
             
                 <span class="post-meta-date" title="更新于">
                     <i class="post-meta-icon fa-solid fa-clock-rotate-left"></i>
-                    <time datetime="2023-04-22T00:21:32+08:00"></time>
+                    <time datetime="2023-04-24T22:45:44+08:00"></time>
                 </span>
             
             
@@ -516,11 +506,12 @@
                 <main class="layout" id="content-inner">
     <div id="post">
         <article class="post-content" id="article-container">
-            <p>vue3 可使用以下配置:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// vue.config.js</span></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = <span class="title function_">defineConfig</span>(&#123;</span><br><span class="line">  ..., <span class="comment">// 其他配置</span></span><br><span class="line">  <span class="attr">css</span>: &#123;</span><br><span class="line">    <span class="comment">// css预设器配置项</span></span><br><span class="line">    <span class="attr">loaderOptions</span>: &#123;</span><br><span class="line">      <span class="attr">less</span>: &#123;</span><br><span class="line">        <span class="attr">additionalData</span>: <span class="string">`@import &#x27;@/assets/common.less&#x27;;`</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+            <p>由于直接使用<code>flex-direction: column;</code>会导致高度坍塌</p>
+<p>所以这边使用<code>writing-mode: vertical-lr;</code>来实现垂直布局, 由于<code>writing-mode</code>的垂直布局会导致子元素内容改变行进方向，所以这边使用<code>writing-mode: horizontal-tb;</code>来实现将子元素摆正</p>
+<p>以下是 demo：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.items</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-flex;</span><br><span class="line">  <span class="attribute">writing-mode</span>: vertical-lr;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: wrap;</span><br><span class="line">  <span class="attribute">align-content</span>: flex-start;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">350px</span>;</span><br><span class="line">  <span class="attribute">background</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">writing-mode</span>: horizontal-tb;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">150px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: red;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">2px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>vite 可使用以下配置:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// vite.config.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title function_">defineConfig</span>(&#123;</span><br><span class="line">  <span class="attr">base</span>: <span class="string">&#x27;./&#x27;</span>,</span><br><span class="line">  <span class="attr">outputDir</span>: <span class="string">&#x27;dist&#x27;</span>,</span><br><span class="line">  <span class="attr">css</span>: &#123;</span><br><span class="line">    <span class="comment">// css预处理器</span></span><br><span class="line">    <span class="attr">preprocessorOptions</span>: &#123;</span><br><span class="line">      <span class="attr">less</span>: &#123;</span><br><span class="line">        <span class="attr">charset</span>: <span class="literal">false</span>,</span><br><span class="line">        <span class="attr">additionalData</span>: <span class="string">&#x27;@import &quot;./src/assets/common.less&quot;;&#x27;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;items&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
         </article>
         <div class="post-tools" id="post-tools">
@@ -533,18 +524,18 @@
         </div>
         <div class="share-main">
             <div class="share-main-all">
-                <div id="qrcode" title="http://localhost:4000/2021/09/23/vue-vite-import-common-less/">
+                <div id="qrcode" title="https://hizai.cn/posts/5172bcbb/">
                 </div>
                 <div class="reward-dec">使用手机访问这篇文章</div>
             </div>
         </div>
         <script type="text/javascript">
-            new QRCode(document.getElementById("qrcode"), "http://localhost:4000/2021/09/23/vue-vite-import-common-less/");
+            new QRCode(document.getElementById("qrcode"), "https://hizai.cn/posts/5172bcbb/");
         </script>
     </div>
 </div>
                 <div class="share-link weibo"><a class="share-button" target="_blank"
-    href="https://service.weibo.com/share/share.php?title=导入公用less文件 | Vue、Vite如何导入公用Less文件？&amp;url=http://localhost:4000/2021/09/23/vue-vite-import-common-less/&amp;pic=/images/js.webp"
+    href="https://service.weibo.com/share/share.php?title=Flex垂直主轴布局，固定高度 | 如何实现自适应宽度？&amp;url=https://hizai.cn/posts/5172bcbb/&amp;pic=/images/css.webp"
     title="分享到微博" rel="noopener external nofollow noreferrer noopener">
     <i class="fab fa-weibo" style="font-size:22px"></i>
 </a>
@@ -559,22 +550,10 @@
                 <div class="tag_share">
                     <div class="post-meta__tag-list">
                         
-                            <a href="/tags/Vue3/" class="post-meta__tags">
+                            <a href="/tags/CSS/" class="post-meta__tags">
                                 <span class="tags-punctuation">#</span>
-                                Vue3
-                                <span class="tagsPageCount">4</span>
-                            </a>
-                        
-                            <a href="/tags/Vite/" class="post-meta__tags">
-                                <span class="tags-punctuation">#</span>
-                                Vite
+                                CSS
                                 <span class="tagsPageCount">2</span>
-                            </a>
-                        
-                            <a href="/tags/JavaScript/" class="post-meta__tags">
-                                <span class="tags-punctuation">#</span>
-                                JavaScript
-                                <span class="tagsPageCount">3</span>
                             </a>
                         
                     </div>
@@ -585,12 +564,12 @@
     <div class="post-copyright__author">
         <a class="post-copyright__original" title="该文章为原创文章，注意版权协议">原创</a>
         <a class="post-copyright-title" href="#">
-            <span>导入公用less文件 | Vue、Vite如何导入公用Less文件？</span>
+            <span>Flex垂直主轴布局，固定高度 | 如何实现自适应宽度？</span>
         </a>
     </div>
     <div class="post-copyright__type">
         <span class="post-copyright-info" id="post-copyright-url">
-            <a href="/2021/09/23/vue-vite-import-common-less/">http://localhost:4000/2021/09/23/vue-vite-import-common-less/</a>
+            <a href="/posts/5172bcbb/">https://hizai.cn/posts/5172bcbb/</a>
         </span>
         <button class="post-copyright-copybtn" onclick="acrylic.copyPageUrl()">
             <i class="fas fa-paste copy-btn"></i>
@@ -604,22 +583,17 @@
 </div>
         <nav class="pagination-post" id="pagination">
     
-        <div class="prev-post pull-left">
-            <a href="/2022/03/05/vue-vite-use-postcss-px-to-viewport/">
-                <div class="pagination-info">
-                    <div class="label">上一篇</div>
-                    <div class="prev_info">如何在Vue、Vite中使用postcss-px-to-viewport？</div>
-                </div>
-            </a>
-        </div>
-        <div class="next-post pull-right">
-            <a href="/2021/07/07/grid-layout/">
-                <div class="pagination-info">
-                    <div class="label">下一篇</div>
-                    <div class="next_info">Grid布局 | 解决Flex布局难点？</div>
-                </div>
-            </a>
-        </div>
+                
+        
+            <div class="prev-post pull-full">
+                <a href="/posts/1d8606b9/">
+                    <div class="pagination-info">
+                        <div class="label">上一篇</div>
+                        <div class="prev_info">Grid布局 | 解决Flex布局难点？</div>
+                    </div>
+                </a>
+            </div>
+        
     
 </nav>
             
@@ -674,18 +648,18 @@
         
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2023/04/20/vscode-vim-quickkey/" title="VIM 快捷键 - 详解常用的命令">
+                <a class="thumbnail" href="/posts/5befea4f/" title="VIM 快捷键 - 详解常用的命令">
                     <img
                         alt="VIM 快捷键 - 详解常用的命令"
                         src="/images/vim.webp">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2023/04/20/vscode-vim-quickkey/">
+                        <a class="article-recent_post_categories" href="/posts/5befea4f/">
                             工具分享
                         </a>
                     
-                    <a class="title" href="/2023/04/20/vscode-vim-quickkey/" title="VIM 快捷键 - 详解常用的命令">
+                    <a class="title" href="/posts/5befea4f/" title="VIM 快捷键 - 详解常用的命令">
                         VIM 快捷键 - 详解常用的命令
                     </a>
                 </div>
@@ -693,18 +667,18 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2023/01/17/vue3-ts-provide-inject-injectKey/" title="Vue3 provide inject如何通过injectKey保存类型">
+                <a class="thumbnail" href="/posts/d690fd48/" title="Vue3 provide inject如何通过injectKey保存类型">
                     <img
                         alt="Vue3 provide inject如何通过injectKey保存类型"
                         src="/images/ts.webp">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2023/01/17/vue3-ts-provide-inject-injectKey/">
+                        <a class="article-recent_post_categories" href="/posts/d690fd48/">
                             Vue3
                         </a>
                     
-                    <a class="title" href="/2023/01/17/vue3-ts-provide-inject-injectKey/" title="Vue3 provide inject如何通过injectKey保存类型">
+                    <a class="title" href="/posts/d690fd48/" title="Vue3 provide inject如何通过injectKey保存类型">
                         Vue3 provide inject如何通过injectKey保存类型
                     </a>
                 </div>
@@ -712,18 +686,18 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2022/09/08/vue3-v-model-one-way-data-flow/" title="Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流">
+                <a class="thumbnail" href="/posts/24ed4586/" title="Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流">
                     <img
                         alt="Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流"
                         src="/images/js.webp">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2022/09/08/vue3-v-model-one-way-data-flow/">
+                        <a class="article-recent_post_categories" href="/posts/24ed4586/">
                             Vue3
                         </a>
                     
-                    <a class="title" href="/2022/09/08/vue3-v-model-one-way-data-flow/" title="Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流">
+                    <a class="title" href="/posts/24ed4586/" title="Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流">
                         Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流
                     </a>
                 </div>
@@ -731,18 +705,18 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2022/03/05/vue-vite-use-postcss-px-to-viewport/" title="如何在Vue、Vite中使用postcss-px-to-viewport？">
+                <a class="thumbnail" href="/posts/6ef67a7a/" title="如何在Vue、Vite中使用postcss-px-to-viewport？">
                     <img
                         alt="如何在Vue、Vite中使用postcss-px-to-viewport？"
                         src="/images/js.webp">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2022/03/05/vue-vite-use-postcss-px-to-viewport/">
+                        <a class="article-recent_post_categories" href="/posts/6ef67a7a/">
                             Vue3
                         </a>
                     
-                    <a class="title" href="/2022/03/05/vue-vite-use-postcss-px-to-viewport/" title="如何在Vue、Vite中使用postcss-px-to-viewport？">
+                    <a class="title" href="/posts/6ef67a7a/" title="如何在Vue、Vite中使用postcss-px-to-viewport？">
                         如何在Vue、Vite中使用postcss-px-to-viewport？
                     </a>
                 </div>
@@ -750,18 +724,18 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2021/09/23/vue-vite-import-common-less/" title="导入公用less文件 | Vue、Vite如何导入公用Less文件？">
+                <a class="thumbnail" href="/posts/718492b3/" title="导入公用less文件 | Vue、Vite如何导入公用Less文件？">
                     <img
                         alt="导入公用less文件 | Vue、Vite如何导入公用Less文件？"
                         src="/images/js.webp">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2021/09/23/vue-vite-import-common-less/">
+                        <a class="article-recent_post_categories" href="/posts/718492b3/">
                             CSS
                         </a>
                     
-                    <a class="title" href="/2021/09/23/vue-vite-import-common-less/" title="导入公用less文件 | Vue、Vite如何导入公用Less文件？">
+                    <a class="title" href="/posts/718492b3/" title="导入公用less文件 | Vue、Vite如何导入公用Less文件？">
                         导入公用less文件 | Vue、Vite如何导入公用Less文件？
                     </a>
                 </div>
@@ -924,4 +898,4 @@
     
     </body>
 </html>
-<script>const posts=["2023/04/20/vscode-vim-quickkey/","2023/01/17/vue3-ts-provide-inject-injectKey/","2022/09/08/vue3-v-model-one-way-data-flow/","2022/03/05/vue-vite-use-postcss-px-to-viewport/","2021/09/23/vue-vite-import-common-less/","2021/07/07/grid-layout/","2021/06/10/flex-fixed-height-width/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
+<script>const posts=["posts/5befea4f/","posts/d690fd48/","posts/24ed4586/","posts/6ef67a7a/","posts/718492b3/","posts/1d8606b9/","posts/5172bcbb/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>

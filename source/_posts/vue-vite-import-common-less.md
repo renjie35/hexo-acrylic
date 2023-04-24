@@ -1,11 +1,16 @@
 ---
-title: '导入公用less文件 | Vue、Vite如何导入公用Less文件？'
+title: 导入公用less文件 | Vue、Vite如何导入公用Less文件？
 date: '2021-09-23'
-categories: 'CSS'
-keywords: 'vue-vite-import-common-less'
-description: '学习如何在Vue和Vite项目中导入公用Less文件，避免重复代码和样式，提高开发效率。逐步指导如何配置和使用，让您的开发过程更顺畅。导入公用less文件的步骤和技巧。'
-cover: '/images/js.webp'
-tags: ['JavaScript', 'Vue3', 'Vite']
+categories: CSS
+keywords: vue-vite-import-common-less
+description: >-
+  学习如何在Vue和Vite项目中导入公用Less文件，避免重复代码和样式，提高开发效率。逐步指导如何配置和使用，让您的开发过程更顺畅。导入公用less文件的步骤和技巧。
+cover: /images/js.webp
+tags:
+  - JavaScript
+  - Vue3
+  - Vite
+abbrlink: 718492b3
 ---
 
 vue3 可使用以下配置:

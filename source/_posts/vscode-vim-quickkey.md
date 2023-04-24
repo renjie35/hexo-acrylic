@@ -1,11 +1,14 @@
 ---
-title: 'VIM 快捷键 - 详解常用的命令'
+title: VIM 快捷键 - 详解常用的命令
 date: '2023-04-20'
-categories: '工具分享'
-keywords: 'vscode-vim-quickkey'
-description: '本文将详细介绍VS Code中常用的VIM快捷键，帮助您更高效地使用VIM编辑器，适合新手入门和资深用户查漏补缺。'
-cover: '/images/vim.webp'
-tags: ['VIM', 'VSCode']
+categories: 工具分享
+keywords: vscode-vim-quickkey
+description: 本文将详细介绍VS Code中常用的VIM快捷键，帮助您更高效地使用VIM编辑器，适合新手入门和资深用户查漏补缺。
+cover: /images/vim.webp
+tags:
+  - VIM
+  - VSCode
+abbrlink: 5befea4f
 ---
 
 ## VIM-快捷键查询

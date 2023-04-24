@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VIM 快捷键 - 详解常用的命令 | Neco</title>
+<title>Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流 | Neco</title>
 <noscript>开启Javascript是必要的</noscript>
 <link rel="icon" type="image/x-icon" href="/img/avatar.webp">
 <link rel="apple-touch-icon" href="/img/avatar.webp">
 <meta name="apple-mobile-web-app-title" content="Neco">
 <link rel="bookmark" href="/img/avatar.webp">
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/avatar.webp">
-<meta name="description" content="本文将详细介绍VS Code中常用的VIM快捷键，帮助您更高效地使用VIM编辑器，适合新手入门和资深用户查漏补缺。">
+<meta name="description" content="在Vue3中，当v-model传递给子组件时，如何在子组件中使用v-model属性而不破坏单向数据流？">
 <meta name="theme-color" content="#1C1C1F">
 <link rel="stylesheet" href="/css/var.css">
 <link rel="stylesheet" href="/css/main.css">
@@ -289,16 +289,20 @@
             </div>
             <div class="card-tag-cloud">
                 
-                    <a href="/tags/VIM/" style="font-size: 1em; color: #d3d3d3">VIM
-                        <sup>1</sup>
-                    </a>
-                
                     <a href="/tags/CSS/" style="font-size: 1em; color: #d3d3d3">CSS
                         <sup>2</sup>
                     </a>
                 
+                    <a href="/tags/VIM/" style="font-size: 1em; color: #d3d3d3">VIM
+                        <sup>1</sup>
+                    </a>
+                
                     <a href="/tags/VSCode/" style="font-size: 1em; color: #d3d3d3">VSCode
                         <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/JavaScript/" style="font-size: 1em; color: #d3d3d3">JavaScript
+                        <sup>3</sup>
                     </a>
                 
                     <a href="/tags/Vue3/" style="font-size: 1em; color: #d3d3d3">Vue3
@@ -307,10 +311,6 @@
                 
                     <a href="/tags/Vite/" style="font-size: 1em; color: #d3d3d3">Vite
                         <sup>2</sup>
-                    </a>
-                
-                    <a href="/tags/JavaScript/" style="font-size: 1em; color: #d3d3d3">JavaScript
-                        <sup>3</sup>
                     </a>
                 
                     <a href="/tags/TypeScript/" style="font-size: 1em; color: #d3d3d3">TypeScript
@@ -344,7 +344,7 @@
         </div>
         <div id="page-name-mask">
             <div id="page-name">
-                <a id="page-name-text" onclick="acrylic.toTop()">VIM 快捷键 - 详解常用的命令</a>
+                <a id="page-name-text" onclick="acrylic.toTop()">Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流</a>
             </div>
         </div>
         <div id="menus">
@@ -437,7 +437,7 @@
 </nav>
     
         <div class="coverdiv" id="coverdiv">
-    <img id="post-cover" class="nolazyload" src="/images/vim.webp" alt="cover">
+    <img id="post-cover" class="nolazyload" src="/images/js.webp" alt="cover">
 </div>
 <div id="post-info">
     <div id="post-firstinfo">
@@ -447,37 +447,37 @@
             </a>
             <span class="post-meta-categories">
                 
-                    <a class="post-meta-categories" href="/categories/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/">工具分享</a>
+                    <a class="post-meta-categories" href="/categories/Vue3/">Vue3</a>
                 
             </span>
             <div class="tag_share">
                 <div class="post-meta__tag-list">
                     
-                        <a class="post-meta__tags" href="/tags/VIM/">
+                        <a class="post-meta__tags" href="/tags/JavaScript/">
                             <span class="tags-punctuation">#</span>
-                            <span class="tags-name">VIM</span>
+                            <span class="tags-name">JavaScript</span>
                         </a>
                     
-                        <a class="post-meta__tags" href="/tags/VSCode/">
+                        <a class="post-meta__tags" href="/tags/Vue3/">
                             <span class="tags-punctuation">#</span>
-                            <span class="tags-name">VSCode</span>
+                            <span class="tags-name">Vue3</span>
                         </a>
                     
                 </div>
             </div>
         </div>
     </div>
-    <h1 class="post-title">VIM 快捷键 - 详解常用的命令</h1>
+    <h1 class="post-title">Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流</h1>
     <div id="post-meta">
         <div class="meta-secondline">
             <span class="post-meta-date" title="发布于">
                 <i class="post-meta-icon fa-fw fas fa-calendar"></i>
-                <time datetime="2023-04-20T08:00:00+08:00"></time>
+                <time datetime="2022-09-08T08:00:00+08:00"></time>
             </span>
             
                 <span class="post-meta-date" title="更新于">
                     <i class="post-meta-icon fa-solid fa-clock-rotate-left"></i>
-                    <time datetime="2023-04-22T00:18:58+08:00"></time>
+                    <time datetime="2023-04-24T22:45:44+08:00"></time>
                 </span>
             
             
@@ -511,275 +511,15 @@
                 <main class="layout" id="content-inner">
     <div id="post">
         <article class="post-content" id="article-container">
-            <h2 id="VIM-快捷键查询"><a href="#VIM-快捷键查询" class="headerlink" title="VIM-快捷键查询"></a>VIM-快捷键查询</h2><h3 id="移动方向键盘"><a href="#移动方向键盘" class="headerlink" title="移动方向键盘"></a>移动方向键盘</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>j</code></td>
-<td align="left">下移</td>
-</tr>
-<tr>
-<td align="center"><code>k</code></td>
-<td align="left">上移</td>
-</tr>
-<tr>
-<td align="center"><code>h</code></td>
-<td align="left">左移</td>
-</tr>
-<tr>
-<td align="center"><code>l</code></td>
-<td align="left">右移</td>
-</tr>
-<tr>
-<td align="center"><code>w</code></td>
-<td align="left">下一个单词</td>
-</tr>
-<tr>
-<td align="center"><code>W</code></td>
-<td align="left">下一个单词（以空格分隔的词）</td>
-</tr>
-<tr>
-<td align="center"><code>b</code></td>
-<td align="left">上一个单词</td>
-</tr>
-<tr>
-<td align="center"><code>B</code></td>
-<td align="left">上一个单词（以空格分隔的词）</td>
-</tr>
-<tr>
-<td align="center"><code>2w/2W/2b/2B</code></td>
-<td align="left">下&#x2F;上第二个单词</td>
-</tr>
-<tr>
-<td align="center"><code>^</code></td>
-<td align="left">非空行首&lt;推荐改为H&gt;</td>
-</tr>
-<tr>
-<td align="center"><code>g + _</code></td>
-<td align="left">非空行尾&lt;推荐改为L&gt;</td>
-</tr>
-<tr>
-<td align="center"><code>0</code></td>
-<td align="left">行首</td>
-</tr>
-<tr>
-<td align="center"><code>$</code></td>
-<td align="left">行尾</td>
-</tr>
-<tr>
-<td align="center"><code>gg</code></td>
-<td align="left">文件开头</td>
-</tr>
-<tr>
-<td align="center"><code>G</code></td>
-<td align="left">文件末尾</td>
-</tr>
-</tbody></table>
-<h3 id="文档查看"><a href="#文档查看" class="headerlink" title="文档查看"></a>文档查看</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>（</code></td>
-<td align="left">上一段落（包含空格）</td>
-</tr>
-<tr>
-<td align="center"><code>）</code></td>
-<td align="left">下一段落（包含空格）</td>
-</tr>
-<tr>
-<td align="center"><code>&#123;</code></td>
-<td align="left">上一段落（不含空格）</td>
-</tr>
-<tr>
-<td align="center"><code>&#125;</code></td>
-<td align="left">下一段落（不含空格）</td>
-</tr>
-<tr>
-<td align="center"><code>[[</code></td>
-<td align="left">文档开头</td>
-</tr>
-<tr>
-<td align="center"><code>]]</code></td>
-<td align="left">文档结尾</td>
-</tr>
-</tbody></table>
-<h3 id="插入文本"><a href="#插入文本" class="headerlink" title="插入文本"></a>插入文本</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>a</code></td>
-<td align="left">光标后插入</td>
-</tr>
-<tr>
-<td align="center"><code>A</code></td>
-<td align="left">行末插入</td>
-</tr>
-<tr>
-<td align="center"><code>i</code></td>
-<td align="left">光标前插入</td>
-</tr>
-<tr>
-<td align="center"><code>o</code></td>
-<td align="left">光标下一行插入</td>
-</tr>
-<tr>
-<td align="center"><code>O</code></td>
-<td align="left">光标上一行插入</td>
-</tr>
-<tr>
-<td align="center"><code>cc</code></td>
-<td align="left">当前行替换插入</td>
-</tr>
-</tbody></table>
-<h3 id="删除文本"><a href="#删除文本" class="headerlink" title="删除文本"></a>删除文本</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>dd</code></td>
-<td align="left">删除当前行</td>
-</tr>
-<tr>
-<td align="center"><code>x</code></td>
-<td align="left">删除光标处文本</td>
-</tr>
-<tr>
-<td align="center"><code>dw</code></td>
-<td align="left">删除光标处到单词末尾</td>
-</tr>
-<tr>
-<td align="center"><code>d0</code></td>
-<td align="left">删除到行首</td>
-</tr>
-<tr>
-<td align="center"><code>d$</code></td>
-<td align="left">删除到行尾</td>
-</tr>
-<tr>
-<td align="center"><code>2dd</code></td>
-<td align="left">删除2行</td>
-</tr>
-<tr>
-<td align="center"><code>dgg</code></td>
-<td align="left">删除到文件开头</td>
-</tr>
-<tr>
-<td align="center"><code>dG</code></td>
-<td align="left">删除到文件末尾</td>
-</tr>
-</tbody></table>
-<h3 id="特殊操作"><a href="#特殊操作" class="headerlink" title="特殊操作"></a>特殊操作</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>yy</code></td>
-<td align="left">复制到缓冲器（ctrl + c功能一致但是缓冲区不同）</td>
-</tr>
-<tr>
-<td align="center"><code>p</code></td>
-<td align="left">粘贴到光标后</td>
-</tr>
-<tr>
-<td align="center"><code>P</code></td>
-<td align="left">粘贴到光标前</td>
-</tr>
-<tr>
-<td align="center"><code>u</code></td>
-<td align="left">撤销</td>
-</tr>
-<tr>
-<td align="center"><code>ctrl + r</code></td>
-<td align="left">重做</td>
-</tr>
-<tr>
-<td align="center"><code>/xxx</code></td>
-<td align="left">光标后搜索xxx</td>
-</tr>
-<tr>
-<td align="center"><code>?xxx</code></td>
-<td align="left">光标前搜索xxx</td>
-</tr>
-<tr>
-<td align="center"><code>n</code></td>
-<td align="left">移动到下一个搜索结果</td>
-</tr>
-<tr>
-<td align="center"><code>N</code></td>
-<td align="left">移动到上一个搜索结果</td>
-</tr>
-</tbody></table>
-<h3 id="选择文本"><a href="#选择文本" class="headerlink" title="选择文本"></a>选择文本</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>v</code></td>
-<td align="left">光标处开始选中</td>
-</tr>
-<tr>
-<td align="center"><code>V</code></td>
-<td align="left">光标当前行选中</td>
-</tr>
-<tr>
-<td align="center"><code>ESC</code></td>
-<td align="left">退出选中</td>
-</tr>
-</tbody></table>
-<h3 id="选中文本后操作"><a href="#选中文本后操作" class="headerlink" title="选中文本后操作"></a>选中文本后操作</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>~</code></td>
-<td align="left">切换大小写</td>
-</tr>
-<tr>
-<td align="center"><code>d</code></td>
-<td align="left">删除</td>
-</tr>
-<tr>
-<td align="center"><code>c</code></td>
-<td align="left">删除后进入插入状态</td>
-</tr>
-<tr>
-<td align="center"><code>y</code></td>
-<td align="left">复制</td>
-</tr>
-<tr>
-<td align="center"><code>p</code></td>
-<td align="left">粘贴</td>
-</tr>
-</tbody></table>
-<h2 id="VSCode配置"><a href="#VSCode配置" class="headerlink" title="VSCode配置"></a>VSCode配置</h2><p><code>VSCode</code> 快捷键配置：</p>
-<ul>
-<li>方便键盘按键移动</li>
-</ul>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//setting.json</span></span><br><span class="line"><span class="attr">&quot;vim.normalModeKeyBindings&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;before&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;H&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;after&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;^&quot;</span><span class="punctuation">]</span> <span class="comment">//大写H 移动到行首（非空文字）</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;before&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;L&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;after&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;g&quot;</span><span class="punctuation">,</span> <span class="string">&quot;_&quot;</span><span class="punctuation">]</span> <span class="comment">//大写L 移动到行尾（非空文字）</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+            <p>目前 Vue3 中，v-model 的实现是通过 <code>v-bind=&quot;$attrs&quot;</code> 和 <code>v-on=&quot;$listeners&quot;</code> 来实现的，这样就会导致子组件中的 v-model 属性会被传递到子组件中，如果子组件中也有 v-model 属性，那么就会导致子组件中的 v-model 属性会被覆盖，从而破坏了单向数据流。</p>
+<p>那么如何在子组件中使用 v-model 属性而不破坏单向数据流呢?</p>
+<p>可以利用 <code>computed</code> 属性配合 <code>Proxy</code> 来实现，再写成通用的 <code>composables</code> ，如下代码：</p>
+<p>此处注意如果不使用 <code>Proxy</code> 的话，会导致 v-model 只更改了子组件中的属性，而父组件中的属性没有更改，所以这里使用 <code>emit(&#39;update:xxx&#39;)</code> 来实现更新父组件中的属性。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//useVModel.js</span></span><br><span class="line"><span class="keyword">import</span> &#123; computed &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">useVModel</span>(<span class="params">props, propName, emit</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="title function_">computed</span>(&#123;</span><br><span class="line">    <span class="title function_">get</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;get&#x27;</span>)</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Proxy</span>(props[propName], &#123;</span><br><span class="line">        <span class="title function_">set</span>(<span class="params">obj, name, value</span>) &#123;</span><br><span class="line">          <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;set&#x27;</span>, obj, name, value)</span><br><span class="line">          <span class="title function_">emit</span>(<span class="string">&#x27;update:&#x27;</span> + propName, &#123;</span><br><span class="line">            ...obj,</span><br><span class="line">            [name]: value,</span><br><span class="line">          &#125;)</span><br><span class="line">          <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">        &#125;,</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">set</span>(<span class="params">val</span>) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;set&#x27;</span>)</span><br><span class="line">      <span class="title function_">emit</span>(<span class="string">&#x27;update:&#x27;</span> + propName, val)</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>调用时如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//demo.vue</span></span><br><span class="line">&lt;script setup&gt;</span><br><span class="line"><span class="keyword">import</span> &#123; useVModel &#125; <span class="keyword">from</span> <span class="string">&#x27;@/composables/useVModel&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> props = <span class="title function_">defineProps</span>(&#123;</span><br><span class="line">  <span class="attr">modelValue</span>: &#123;</span><br><span class="line">    <span class="attr">type</span>: <span class="title class_">Object</span>,</span><br><span class="line">    <span class="attr">required</span>: <span class="literal">true</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> emit = <span class="title function_">defineEmits</span>([<span class="string">&#x27;update:modelValue&#x27;</span>])</span><br><span class="line"><span class="keyword">const</span> model = <span class="title function_">useVModel</span>(props, <span class="string">&#x27;modelValue&#x27;</span>, emit)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">&quot;model.value&quot;</span> <span class="attr">:placeholder</span>=<span class="string">&quot;model.placeholder&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
         </article>
         <div class="post-tools" id="post-tools">
             <div class="post-tools-left">
@@ -791,18 +531,18 @@
         </div>
         <div class="share-main">
             <div class="share-main-all">
-                <div id="qrcode" title="http://localhost:4000/2023/04/20/vscode-vim-quickkey/">
+                <div id="qrcode" title="https://hizai.cn/posts/24ed4586/">
                 </div>
                 <div class="reward-dec">使用手机访问这篇文章</div>
             </div>
         </div>
         <script type="text/javascript">
-            new QRCode(document.getElementById("qrcode"), "http://localhost:4000/2023/04/20/vscode-vim-quickkey/");
+            new QRCode(document.getElementById("qrcode"), "https://hizai.cn/posts/24ed4586/");
         </script>
     </div>
 </div>
                 <div class="share-link weibo"><a class="share-button" target="_blank"
-    href="https://service.weibo.com/share/share.php?title=VIM 快捷键 - 详解常用的命令&amp;url=http://localhost:4000/2023/04/20/vscode-vim-quickkey/&amp;pic=/images/vim.webp"
+    href="https://service.weibo.com/share/share.php?title=Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流&amp;url=https://hizai.cn/posts/24ed4586/&amp;pic=/images/js.webp"
     title="分享到微博" rel="noopener external nofollow noreferrer noopener">
     <i class="fab fa-weibo" style="font-size:22px"></i>
 </a>
@@ -817,16 +557,16 @@
                 <div class="tag_share">
                     <div class="post-meta__tag-list">
                         
-                            <a href="/tags/VIM/" class="post-meta__tags">
+                            <a href="/tags/JavaScript/" class="post-meta__tags">
                                 <span class="tags-punctuation">#</span>
-                                VIM
-                                <span class="tagsPageCount">1</span>
+                                JavaScript
+                                <span class="tagsPageCount">3</span>
                             </a>
                         
-                            <a href="/tags/VSCode/" class="post-meta__tags">
+                            <a href="/tags/Vue3/" class="post-meta__tags">
                                 <span class="tags-punctuation">#</span>
-                                VSCode
-                                <span class="tagsPageCount">1</span>
+                                Vue3
+                                <span class="tagsPageCount">4</span>
                             </a>
                         
                     </div>
@@ -837,12 +577,12 @@
     <div class="post-copyright__author">
         <a class="post-copyright__original" title="该文章为原创文章，注意版权协议">原创</a>
         <a class="post-copyright-title" href="#">
-            <span>VIM 快捷键 - 详解常用的命令</span>
+            <span>Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流</span>
         </a>
     </div>
     <div class="post-copyright__type">
         <span class="post-copyright-info" id="post-copyright-url">
-            <a href="/2023/04/20/vscode-vim-quickkey/">http://localhost:4000/2023/04/20/vscode-vim-quickkey/</a>
+            <a href="/posts/24ed4586/">https://hizai.cn/posts/24ed4586/</a>
         </span>
         <button class="post-copyright-copybtn" onclick="acrylic.copyPageUrl()">
             <i class="fas fa-paste copy-btn"></i>
@@ -856,17 +596,22 @@
 </div>
         <nav class="pagination-post" id="pagination">
     
-        
-            <div class="next-post pull-full">
-                <a href="/2023/01/17/vue3-ts-provide-inject-injectKey/">
-                    <div class="pagination-info">
-                        <div class="label">下一篇</div>
-                        <div class="next_info">Vue3 provide inject如何通过injectKey保存类型</div>
-                    </div>
-                </a>
-            </div>
-                
-        
+        <div class="prev-post pull-left">
+            <a href="/posts/d690fd48/">
+                <div class="pagination-info">
+                    <div class="label">上一篇</div>
+                    <div class="prev_info">Vue3 provide inject如何通过injectKey保存类型</div>
+                </div>
+            </a>
+        </div>
+        <div class="next-post pull-right">
+            <a href="/posts/6ef67a7a/">
+                <div class="pagination-info">
+                    <div class="label">下一篇</div>
+                    <div class="next_info">如何在Vue、Vite中使用postcss-px-to-viewport？</div>
+                </div>
+            </a>
+        </div>
     
 </nav>
             
@@ -906,7 +651,7 @@
         <span>文章目录</span>
     </div>
     <div class="toc-content" id="toc-content">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#VIM-%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%9F%A5%E8%AF%A2"><span class="toc-text">VIM-快捷键查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E6%96%B9%E5%90%91%E9%94%AE%E7%9B%98"><span class="toc-text">移动方向键盘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%A1%A3%E6%9F%A5%E7%9C%8B"><span class="toc-text">文档查看</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%96%87%E6%9C%AC"><span class="toc-text">插入文本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E6%9C%AC"><span class="toc-text">删除文本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%93%8D%E4%BD%9C"><span class="toc-text">特殊操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E6%96%87%E6%9C%AC"><span class="toc-text">选择文本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E4%B8%AD%E6%96%87%E6%9C%AC%E5%90%8E%E6%93%8D%E4%BD%9C"><span class="toc-text">选中文本后操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VSCode%E9%85%8D%E7%BD%AE"><span class="toc-text">VSCode配置</span></a></li></ol>
+        
     </div>
 </div>
             
@@ -921,18 +666,18 @@
         
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2023/04/20/vscode-vim-quickkey/" title="VIM 快捷键 - 详解常用的命令">
+                <a class="thumbnail" href="/posts/5befea4f/" title="VIM 快捷键 - 详解常用的命令">
                     <img
                         alt="VIM 快捷键 - 详解常用的命令"
                         src="/images/vim.webp">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2023/04/20/vscode-vim-quickkey/">
+                        <a class="article-recent_post_categories" href="/posts/5befea4f/">
                             工具分享
                         </a>
                     
-                    <a class="title" href="/2023/04/20/vscode-vim-quickkey/" title="VIM 快捷键 - 详解常用的命令">
+                    <a class="title" href="/posts/5befea4f/" title="VIM 快捷键 - 详解常用的命令">
                         VIM 快捷键 - 详解常用的命令
                     </a>
                 </div>
@@ -940,18 +685,18 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2023/01/17/vue3-ts-provide-inject-injectKey/" title="Vue3 provide inject如何通过injectKey保存类型">
+                <a class="thumbnail" href="/posts/d690fd48/" title="Vue3 provide inject如何通过injectKey保存类型">
                     <img
                         alt="Vue3 provide inject如何通过injectKey保存类型"
                         src="/images/ts.webp">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2023/01/17/vue3-ts-provide-inject-injectKey/">
+                        <a class="article-recent_post_categories" href="/posts/d690fd48/">
                             Vue3
                         </a>
                     
-                    <a class="title" href="/2023/01/17/vue3-ts-provide-inject-injectKey/" title="Vue3 provide inject如何通过injectKey保存类型">
+                    <a class="title" href="/posts/d690fd48/" title="Vue3 provide inject如何通过injectKey保存类型">
                         Vue3 provide inject如何通过injectKey保存类型
                     </a>
                 </div>
@@ -959,18 +704,18 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2022/09/08/vue3-v-model-one-way-data-flow/" title="Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流">
+                <a class="thumbnail" href="/posts/24ed4586/" title="Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流">
                     <img
                         alt="Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流"
                         src="/images/js.webp">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2022/09/08/vue3-v-model-one-way-data-flow/">
+                        <a class="article-recent_post_categories" href="/posts/24ed4586/">
                             Vue3
                         </a>
                     
-                    <a class="title" href="/2022/09/08/vue3-v-model-one-way-data-flow/" title="Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流">
+                    <a class="title" href="/posts/24ed4586/" title="Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流">
                         Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流
                     </a>
                 </div>
@@ -978,18 +723,18 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2022/03/05/vue-vite-use-postcss-px-to-viewport/" title="如何在Vue、Vite中使用postcss-px-to-viewport？">
+                <a class="thumbnail" href="/posts/6ef67a7a/" title="如何在Vue、Vite中使用postcss-px-to-viewport？">
                     <img
                         alt="如何在Vue、Vite中使用postcss-px-to-viewport？"
                         src="/images/js.webp">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2022/03/05/vue-vite-use-postcss-px-to-viewport/">
+                        <a class="article-recent_post_categories" href="/posts/6ef67a7a/">
                             Vue3
                         </a>
                     
-                    <a class="title" href="/2022/03/05/vue-vite-use-postcss-px-to-viewport/" title="如何在Vue、Vite中使用postcss-px-to-viewport？">
+                    <a class="title" href="/posts/6ef67a7a/" title="如何在Vue、Vite中使用postcss-px-to-viewport？">
                         如何在Vue、Vite中使用postcss-px-to-viewport？
                     </a>
                 </div>
@@ -997,18 +742,18 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2021/09/23/vue-vite-import-common-less/" title="导入公用less文件 | Vue、Vite如何导入公用Less文件？">
+                <a class="thumbnail" href="/posts/718492b3/" title="导入公用less文件 | Vue、Vite如何导入公用Less文件？">
                     <img
                         alt="导入公用less文件 | Vue、Vite如何导入公用Less文件？"
                         src="/images/js.webp">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2021/09/23/vue-vite-import-common-less/">
+                        <a class="article-recent_post_categories" href="/posts/718492b3/">
                             CSS
                         </a>
                     
-                    <a class="title" href="/2021/09/23/vue-vite-import-common-less/" title="导入公用less文件 | Vue、Vite如何导入公用Less文件？">
+                    <a class="title" href="/posts/718492b3/" title="导入公用less文件 | Vue、Vite如何导入公用Less文件？">
                         导入公用less文件 | Vue、Vite如何导入公用Less文件？
                     </a>
                 </div>
@@ -1171,4 +916,4 @@
     
     </body>
 </html>
-<script>const posts=["2023/04/20/vscode-vim-quickkey/","2023/01/17/vue3-ts-provide-inject-injectKey/","2022/09/08/vue3-v-model-one-way-data-flow/","2022/03/05/vue-vite-use-postcss-px-to-viewport/","2021/09/23/vue-vite-import-common-less/","2021/07/07/grid-layout/","2021/06/10/flex-fixed-height-width/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
+<script>const posts=["posts/5befea4f/","posts/d690fd48/","posts/24ed4586/","posts/6ef67a7a/","posts/718492b3/","posts/1d8606b9/","posts/5172bcbb/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>

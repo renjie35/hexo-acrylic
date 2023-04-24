@@ -1,11 +1,13 @@
 ---
-title: 'Grid布局 | 解决Flex布局难点？'
+title: Grid布局 | 解决Flex布局难点？
 date: '2021-07-07'
-categories: 'CSS'
-keywords: 'layout-grid-flex'
-description: '学习如何使用Grid解决Flex难完成的布局。'
-cover: '/images/css.webp'
-tags: ['CSS']
+categories: CSS
+keywords: layout-grid-flex
+description: 学习如何使用Grid解决Flex难完成的布局。
+cover: /images/css.webp
+tags:
+  - CSS
+abbrlink: 1d8606b9
 ---
 
 

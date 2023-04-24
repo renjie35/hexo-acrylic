@@ -1,11 +1,14 @@
 ---
-title: 'Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流'
+title: Vue3中子组件中的v-model调用时穿透|如何不破坏单向数据流
 date: '2022-09-08'
-categories: 'Vue3'
-keywords: 'vue3-v-model-one-way-data-flow'
-description: '在Vue3中，当v-model传递给子组件时，如何在子组件中使用v-model属性而不破坏单向数据流？'
-cover: '/images/js.webp'
-tags: ['JavaScript', 'Vue3']
+categories: Vue3
+keywords: vue3-v-model-one-way-data-flow
+description: 在Vue3中，当v-model传递给子组件时，如何在子组件中使用v-model属性而不破坏单向数据流？
+cover: /images/js.webp
+tags:
+  - JavaScript
+  - Vue3
+abbrlink: 24ed4586
 ---
 
 目前 Vue3 中，v-model 的实现是通过 `v-bind="$attrs"` 和 `v-on="$listeners"` 来实现的，这样就会导致子组件中的 v-model 属性会被传递到子组件中，如果子组件中也有 v-model 属性，那么就会导致子组件中的 v-model 属性会被覆盖，从而破坏了单向数据流。
