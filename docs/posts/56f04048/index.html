@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VIM 快捷键 - 详解常用的命令 | Neco</title>
+<title>前端面试八股文 | 涵盖常见问题与技巧 | Neco</title>
 <noscript>开启Javascript是必要的</noscript>
 <link rel="icon" type="image/x-icon" href="/img/avatar.webp">
 <link rel="apple-touch-icon" href="/img/avatar.webp">
 <meta name="apple-mobile-web-app-title" content="Neco">
 <link rel="bookmark" href="/img/avatar.webp">
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/avatar.webp">
-<meta name="description" content="本文将详细介绍VS Code中常用的VIM快捷键，帮助您更高效地使用VIM编辑器，适合新手入门和资深用户查漏补缺。">
+<meta name="description" content="想要快速拿到前端面试 Offer？不妨来看看最新的前端面试八股文，其中包含了常见问题和技巧，助你轻松应对面试。">
 <meta name="theme-color" content="#1C1C1F">
 <link rel="stylesheet" href="/css/var.css">
 <link rel="stylesheet" href="/css/main.css">
@@ -348,7 +348,7 @@
         </div>
         <div id="page-name-mask">
             <div id="page-name">
-                <a id="page-name-text" onclick="acrylic.toTop()">VIM 快捷键 - 详解常用的命令</a>
+                <a id="page-name-text" onclick="acrylic.toTop()">前端面试八股文 | 涵盖常见问题与技巧</a>
             </div>
         </div>
         <div id="menus">
@@ -441,7 +441,7 @@
 </nav>
     
         <div class="coverdiv" id="coverdiv">
-    <img id="post-cover" class="nolazyload" src="/images/vim.webp" alt="cover">
+    <img id="post-cover" class="nolazyload" src="/images/js.webp" alt="cover">
 </div>
 <div id="post-info">
     <div id="post-firstinfo">
@@ -451,37 +451,32 @@
             </a>
             <span class="post-meta-categories">
                 
-                    <a class="post-meta-categories" href="/categories/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/">工具分享</a>
+                    <a class="post-meta-categories" href="/categories/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0/">前端复习</a>
                 
             </span>
             <div class="tag_share">
                 <div class="post-meta__tag-list">
                     
-                        <a class="post-meta__tags" href="/tags/VIM/">
+                        <a class="post-meta__tags" href="/tags/interview/">
                             <span class="tags-punctuation">#</span>
-                            <span class="tags-name">VIM</span>
-                        </a>
-                    
-                        <a class="post-meta__tags" href="/tags/VSCode/">
-                            <span class="tags-punctuation">#</span>
-                            <span class="tags-name">VSCode</span>
+                            <span class="tags-name">interview</span>
                         </a>
                     
                 </div>
             </div>
         </div>
     </div>
-    <h1 class="post-title">VIM 快捷键 - 详解常用的命令</h1>
+    <h1 class="post-title">前端面试八股文 | 涵盖常见问题与技巧</h1>
     <div id="post-meta">
         <div class="meta-secondline">
             <span class="post-meta-date" title="发布于">
                 <i class="post-meta-icon fa-fw fas fa-calendar"></i>
-                <time datetime="2023-04-20T08:00:00+08:00"></time>
+                <time datetime="2023-04-25T08:00:00+08:00"></time>
             </span>
             
                 <span class="post-meta-date" title="更新于">
                     <i class="post-meta-icon fa-solid fa-clock-rotate-left"></i>
-                    <time datetime="2023-04-24T22:45:44+08:00"></time>
+                    <time datetime="2023-04-25T23:41:44+08:00"></time>
                 </span>
             
             
@@ -515,275 +510,119 @@
                 <main class="layout" id="content-inner">
     <div id="post">
         <article class="post-content" id="article-container">
-            <h2 id="VIM-快捷键查询"><a href="#VIM-快捷键查询" class="headerlink" title="VIM-快捷键查询"></a>VIM-快捷键查询</h2><h3 id="移动方向键盘"><a href="#移动方向键盘" class="headerlink" title="移动方向键盘"></a>移动方向键盘</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>j</code></td>
-<td align="left">下移</td>
-</tr>
-<tr>
-<td align="center"><code>k</code></td>
-<td align="left">上移</td>
-</tr>
-<tr>
-<td align="center"><code>h</code></td>
-<td align="left">左移</td>
-</tr>
-<tr>
-<td align="center"><code>l</code></td>
-<td align="left">右移</td>
-</tr>
-<tr>
-<td align="center"><code>w</code></td>
-<td align="left">下一个单词</td>
-</tr>
-<tr>
-<td align="center"><code>W</code></td>
-<td align="left">下一个单词（以空格分隔的词）</td>
-</tr>
-<tr>
-<td align="center"><code>b</code></td>
-<td align="left">上一个单词</td>
-</tr>
-<tr>
-<td align="center"><code>B</code></td>
-<td align="left">上一个单词（以空格分隔的词）</td>
-</tr>
-<tr>
-<td align="center"><code>2w/2W/2b/2B</code></td>
-<td align="left">下&#x2F;上第二个单词</td>
-</tr>
-<tr>
-<td align="center"><code>^</code></td>
-<td align="left">非空行首&lt;推荐改为H&gt;</td>
-</tr>
-<tr>
-<td align="center"><code>g + _</code></td>
-<td align="left">非空行尾&lt;推荐改为L&gt;</td>
-</tr>
-<tr>
-<td align="center"><code>0</code></td>
-<td align="left">行首</td>
-</tr>
-<tr>
-<td align="center"><code>$</code></td>
-<td align="left">行尾</td>
-</tr>
-<tr>
-<td align="center"><code>gg</code></td>
-<td align="left">文件开头</td>
-</tr>
-<tr>
-<td align="center"><code>G</code></td>
-<td align="left">文件末尾</td>
-</tr>
-</tbody></table>
-<h3 id="文档查看"><a href="#文档查看" class="headerlink" title="文档查看"></a>文档查看</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>（</code></td>
-<td align="left">上一段落（包含空格）</td>
-</tr>
-<tr>
-<td align="center"><code>）</code></td>
-<td align="left">下一段落（包含空格）</td>
-</tr>
-<tr>
-<td align="center"><code>&#123;</code></td>
-<td align="left">上一段落（不含空格）</td>
-</tr>
-<tr>
-<td align="center"><code>&#125;</code></td>
-<td align="left">下一段落（不含空格）</td>
-</tr>
-<tr>
-<td align="center"><code>[[</code></td>
-<td align="left">文档开头</td>
-</tr>
-<tr>
-<td align="center"><code>]]</code></td>
-<td align="left">文档结尾</td>
-</tr>
-</tbody></table>
-<h3 id="插入文本"><a href="#插入文本" class="headerlink" title="插入文本"></a>插入文本</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>a</code></td>
-<td align="left">光标后插入</td>
-</tr>
-<tr>
-<td align="center"><code>A</code></td>
-<td align="left">行末插入</td>
-</tr>
-<tr>
-<td align="center"><code>i</code></td>
-<td align="left">光标前插入</td>
-</tr>
-<tr>
-<td align="center"><code>o</code></td>
-<td align="left">光标下一行插入</td>
-</tr>
-<tr>
-<td align="center"><code>O</code></td>
-<td align="left">光标上一行插入</td>
-</tr>
-<tr>
-<td align="center"><code>cc</code></td>
-<td align="left">当前行替换插入</td>
-</tr>
-</tbody></table>
-<h3 id="删除文本"><a href="#删除文本" class="headerlink" title="删除文本"></a>删除文本</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>dd</code></td>
-<td align="left">删除当前行</td>
-</tr>
-<tr>
-<td align="center"><code>x</code></td>
-<td align="left">删除光标处文本</td>
-</tr>
-<tr>
-<td align="center"><code>dw</code></td>
-<td align="left">删除光标处到单词末尾</td>
-</tr>
-<tr>
-<td align="center"><code>d0</code></td>
-<td align="left">删除到行首</td>
-</tr>
-<tr>
-<td align="center"><code>d$</code></td>
-<td align="left">删除到行尾</td>
-</tr>
-<tr>
-<td align="center"><code>2dd</code></td>
-<td align="left">删除2行</td>
-</tr>
-<tr>
-<td align="center"><code>dgg</code></td>
-<td align="left">删除到文件开头</td>
-</tr>
-<tr>
-<td align="center"><code>dG</code></td>
-<td align="left">删除到文件末尾</td>
-</tr>
-</tbody></table>
-<h3 id="特殊操作"><a href="#特殊操作" class="headerlink" title="特殊操作"></a>特殊操作</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>yy</code></td>
-<td align="left">复制到缓冲器（ctrl + c功能一致但是缓冲区不同）</td>
-</tr>
-<tr>
-<td align="center"><code>p</code></td>
-<td align="left">粘贴到光标后</td>
-</tr>
-<tr>
-<td align="center"><code>P</code></td>
-<td align="left">粘贴到光标前</td>
-</tr>
-<tr>
-<td align="center"><code>u</code></td>
-<td align="left">撤销</td>
-</tr>
-<tr>
-<td align="center"><code>ctrl + r</code></td>
-<td align="left">重做</td>
-</tr>
-<tr>
-<td align="center"><code>/xxx</code></td>
-<td align="left">光标后搜索xxx</td>
-</tr>
-<tr>
-<td align="center"><code>?xxx</code></td>
-<td align="left">光标前搜索xxx</td>
-</tr>
-<tr>
-<td align="center"><code>n</code></td>
-<td align="left">移动到下一个搜索结果</td>
-</tr>
-<tr>
-<td align="center"><code>N</code></td>
-<td align="left">移动到上一个搜索结果</td>
-</tr>
-</tbody></table>
-<h3 id="选择文本"><a href="#选择文本" class="headerlink" title="选择文本"></a>选择文本</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>v</code></td>
-<td align="left">光标处开始选中</td>
-</tr>
-<tr>
-<td align="center"><code>V</code></td>
-<td align="left">光标当前行选中</td>
-</tr>
-<tr>
-<td align="center"><code>ESC</code></td>
-<td align="left">退出选中</td>
-</tr>
-</tbody></table>
-<h3 id="选中文本后操作"><a href="#选中文本后操作" class="headerlink" title="选中文本后操作"></a>选中文本后操作</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>~</code></td>
-<td align="left">切换大小写</td>
-</tr>
-<tr>
-<td align="center"><code>d</code></td>
-<td align="left">删除</td>
-</tr>
-<tr>
-<td align="center"><code>c</code></td>
-<td align="left">删除后进入插入状态</td>
-</tr>
-<tr>
-<td align="center"><code>y</code></td>
-<td align="left">复制</td>
-</tr>
-<tr>
-<td align="center"><code>p</code></td>
-<td align="left">粘贴</td>
-</tr>
-</tbody></table>
-<h2 id="VSCode配置"><a href="#VSCode配置" class="headerlink" title="VSCode配置"></a>VSCode配置</h2><p><code>VSCode</code> 快捷键配置：</p>
+            <h3 id="DOM事件级别"><a href="#DOM事件级别" class="headerlink" title="DOM事件级别"></a>DOM事件级别</h3><p>DOM事件分为</p>
 <ul>
-<li>方便键盘按键移动</li>
+<li>DOM0级</li>
+<li>DOM2级</li>
+<li>DOM3级</li>
 </ul>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//setting.json</span></span><br><span class="line"><span class="attr">&quot;vim.normalModeKeyBindings&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;before&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;H&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;after&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;^&quot;</span><span class="punctuation">]</span> <span class="comment">//大写H 移动到行首（非空文字）</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;before&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;L&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;after&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;g&quot;</span><span class="punctuation">,</span> <span class="string">&quot;_&quot;</span><span class="punctuation">]</span> <span class="comment">//大写L 移动到行尾（非空文字）</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+<p>&#x3D;&#x3D;DOM0级&#x3D;&#x3D;<br>DOM0事件绑定，给元素的事件行为绑定方法，<strong>这些方法都是在当前元素事件行为的冒泡阶段(或者目标阶段)执行的</strong>。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;btn&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;fn()&quot;</span>&gt;</span>test<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>问：此处fn应该不应该加()<br>答：若在js中使用事件赋值，则不加()，如</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;btn&quot;</span>).<span class="property">onclick</span>=fn</span><br></pre></td></tr></table></figure>
+<p>若在html中onclick赋值，则加()，如</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;btn&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;fn()&quot;</span>&gt;</span>test<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>&#x3D;&#x3D;DOM2级&#x3D;&#x3D;<br>DOM2级事件在DOM0级事件的基础上弥补了一个处理程序无法同时绑定多个处理函数的缺点，<strong>允许给一个处理程序添加多个处理函数</strong> 。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;btn&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;fn()&quot;</span>&gt;</span>test<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">  <span class="keyword">var</span> btn = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;btn&#x27;</span>); </span></span><br><span class="line"><span class="language-javascript">  <span class="keyword">function</span> <span class="title function_">fn</span>(<span class="params"></span>) &#123; </span></span><br><span class="line"><span class="language-javascript">    <span class="title function_">alert</span>(<span class="string">&#x27;Hello World&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">  &#125; </span></span><br><span class="line"><span class="language-javascript">  btn.<span class="title function_">addEventListener</span>(<span class="string">&#x27;click&#x27;</span>, fn, <span class="literal">false</span>);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>问：addEventListener的第三个参数作用？<br>答：true表示在捕获阶段触发，false表示在冒泡阶段触发</p>
+<p>&#x3D;&#x3D;DOM3级&#x3D;&#x3D;<br>DOM3级事件在DOM2级事件的基础上添加了更多的事件类型</p>
+<ol>
+<li>UI事件，当用户与页面上的元素交互时触发，如：load、scroll</li>
+<li>焦点事件，当元素获得或失去焦点时触发，如：blur、focus</li>
+<li>鼠标事件，当用户通过鼠标在页面执行操作时触发如：dbclick、mouseup</li>
+<li>滚轮事件，当使用鼠标滚轮或类似设备时触发，如：mousewheel</li>
+<li>文本事件，当在文档中输入文本时触发，如：textInput</li>
+<li>键盘事件，当用户通过键盘在页面上执行操作时触发，如：keydown、keypress</li>
+<li>合成事件，当为IME（输入法编辑器）输入字符时触发，如：compositionstart</li>
+<li>变动事件，当底层DOM结构发生变化时触发，如：DOMsubtreeModified</li>
+</ol>
+<h4 id="事件流"><a href="#事件流" class="headerlink" title="事件流"></a>事件流</h4><p><strong>DOM事件模型分为捕获和冒泡</strong>。一个事件发生后，会在子元素和父元素之间传播（propagation）。这种传播分成三个阶段。</p>
+<p>（1）捕获阶段：事件从window对象自上而下向目标节点传播的阶段；</p>
+<p>（2）目标阶段：真正的目标节点正在处理事件的阶段；</p>
+<p>（3）冒泡阶段：事件从目标节点自下而上向window对象传播的阶段。</p>
+<p> 事件捕获：由外到内<br> 事件冒泡：由内到外</p>
+<p>事件代理</p>
+<ul>
+<li>优点：减少内存消耗，提高性能</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://juejin.im/post/5c71e80d51882562547bb0ce">推荐阅读：深入理解DOM事件机制</a></p>
+<h3 id="事件循环EventLoop"><a href="#事件循环EventLoop" class="headerlink" title="事件循环EventLoop"></a>事件循环EventLoop</h3><p>Chrome源码中，它会开启一个for(;;)的无限循环，此循环每次从消息队列（渲染主线程）中取出第一个任务执行，而其他线程只需要在将任务加到消息队列末尾。（回调事件其实也就是把回调函数封装成任务再添加到消息队列的末尾）<br>过去把消息队列分为宏队列和微队列，但是此方案已经无法满足当前复杂环境的情况，开始有了细微变化。<br>根据W3C的官方解释，一个事件循环有一个或多个任务队列，任务队列是一组任务。每一个事件循环都有一个微任务队列（优先度最高）。每个任务必须指定对应的任务源（即同类型的任务在必须在同一个任务队列）。也可通过任务队列的合并，来合并任务源（即不同类型任务也可在同一任务队列）。具体调用顺序还是和以前的宏任务、微任务相似，只是不同的任务队列都有不同的优先级。</p>
+<h3 id="如何理解JS的异步？"><a href="#如何理解JS的异步？" class="headerlink" title="如何理解JS的异步？"></a>如何理解JS的异步？</h3><p>这是因为JS运行在浏览器的渲染主线程中，然而渲染主线程只有一个，但是要处理许多工作，例如页面渲染、执行js等。<br>如果渲染主线程使用同步的方式来实现，那就会造成线程的阻塞，后续的任务无法执行，造成卡死，所以浏览器主线程采用异步的方式来避免这种情况，主线程将任务交给其他线程去处理，其他线程处理完成后再将事先传递的回调函数封装成任务添加到消息队列的末尾，再由主线程执行。这样的异步环境下可以最大化的保证单线程的流畅运行。</p>
+<h3 id="浏览器渲染原理"><a href="#浏览器渲染原理" class="headerlink" title="浏览器渲染原理"></a>浏览器渲染原理</h3><p>渲染器主线程：</p>
+<ol>
+<li>解析HTML解析CSS，生成<code>DOM Tree</code>和<code>CSSOM Tree</code></li>
+<li>合成<code>Render Tree</code></li>
+<li>根据<code>Render Tree</code>生成<code>Layout Tree</code></li>
+<li>浏览器根据<code>Layout Tree</code>划分图层（Layer）</li>
+</ol>
+<ul>
+<li>图层根据xxx上下文（<code>z-index</code>、<code>transform</code>、<code>opacity</code>等）</li>
+<li><code>will-change</code>影响浏览器分层策略，权重最大</li>
+<li>分层并不是越多越好！</li>
+</ul>
+<ol>
+<li>绘画Paint，<strong>主线程</strong> 为每个图层生成 <strong>指令集</strong> ，交给 <strong>合成线程</strong> 去处理<br>合成线程：</li>
+<li>将每个图层 <strong>分块</strong> 处理</li>
+<li>将 <strong>分块</strong> 的图层进行 <strong>光栅化</strong> ，优先处理靠近视口的块</li>
+</ol>
+<ul>
+<li><strong>光栅化</strong> 结束后，就是位图信息（包含点位和颜色）</li>
+</ul>
+<ol start="3">
+<li>画，合成线程拿到位图信息，生成指引（quard）交给GPU进程，GPU进程最终再画出来</li>
+</ol>
+<h3 id="webpack简易流程"><a href="#webpack简易流程" class="headerlink" title="webpack简易流程"></a>webpack简易流程</h3><pre><code>1.生成chunk文件表
+  入口文件进入
+       |
+  判断文件是否在（chunk表中） --若在表中则跳过
+       |
+  若不在表中，读取文件，解析成AST语法树
+       |
+  提取AST中的require，收集dependencies依赖
+       |
+  替换require为__webpack_require__，替换依赖路径，然后录入chunk表
+       |
+  递归读取依赖表中的内容，若chunk表中已存在则跳过
+       |
+  最后得到chunk表（key为路径，value为内容）
+2.通过eval或者其他方式把chunk文件表中的内容生成文件内容
+3.根据chunk表生成对应的assets（具体文件），然后生成chunkhash（根据文件内容生成hash）
+4.合并所有的chunk，生成bundle（具体文件），并获取文件hash（总文件hash）
+</code></pre>
+<h3 id="原型和原型链"><a href="#原型和原型链" class="headerlink" title="原型和原型链"></a>原型和原型链</h3><ul>
+<li>prototype和__proto__的关系</li>
+</ul>
+<p>举例1：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">------------  prototype  --------------</span><br><span class="line">| Function |  &lt;--------- |new Function|</span><br><span class="line">------------    （原型)   --------------</span><br><span class="line">    ^                          |</span><br><span class="line">    |                          |</span><br><span class="line">    | __proto__                |</span><br><span class="line">    | （隐式原型）               |</span><br><span class="line">------------------             |</span><br><span class="line">| 自定义函数(对象) | &lt;------------</span><br><span class="line">------------------   new（实例化）</span><br></pre></td></tr></table></figure>
+
+<p>举例2：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">-----------------  prototype  --------------</span><br><span class="line">| 自定义函数的原型 |  &lt;--------- |  自定义函数  |</span><br><span class="line">-----------------    （原型)   --------------</span><br><span class="line">    ^                              |</span><br><span class="line">    |                              |</span><br><span class="line">    | __proto__                    |</span><br><span class="line">    | （隐式原型）                   |</span><br><span class="line">------------                       |</span><br><span class="line">| 自定义对象 | &lt;---------------------</span><br><span class="line">------------        new（实例化）</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>Object</code>、<code>Array</code>、<code>Number</code>、<code>Function</code>等函数的<code>__proto__</code>都是<code>Function的原型</code></li>
+<li><code>Function原型</code>的<code>__proto__</code>是<code>Object原型</code></li>
+<li><code>Object原型</code>的<code>__proto__</code>是<code>null</code></li>
+</ul>
+<h3 id="new-的实现"><a href="#new-的实现" class="headerlink" title="new 的实现"></a>new 的实现</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">_new</span>(<span class="params">f, ...args</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> obj = &#123;&#125;</span><br><span class="line">  obj.<span class="property">__proto__</span> = f.<span class="property"><span class="keyword">prototype</span></span></span><br><span class="line">  <span class="keyword">const</span> rst = f.<span class="title function_">apply</span>(obj, args)</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> rst === <span class="string">&#x27;object&#x27;</span> || <span class="keyword">typeof</span> rst === <span class="string">&#x27;function&#x27;</span> ? rst : obj</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>1.新建一个空对象 `&#123;&#125;`
+2.将`f（构造函数）`的原型赋给空对象的`隐式原型__proto__`
+3.修改`f（构造函数）`的`this`指向，并执行`f函数`
+4.判断结果rst，若是对象或者函数，则返回rst，否则返回obj
+</code></pre>
+<h3 id="发布订阅模式"><a href="#发布订阅模式" class="headerlink" title="发布订阅模式"></a>发布订阅模式</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 发布订阅模式</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">EventEmitter</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 事件对象，存放订阅的名字和事件  如:  &#123; click: [ handle1, handle2 ]  &#125;</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">events</span> = &#123;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 订阅事件的方法</span></span><br><span class="line">  <span class="title function_">on</span>(<span class="params">eventName, callback</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="variable language_">this</span>.<span class="property">events</span>[eventName]) &#123;</span><br><span class="line">      <span class="comment">// 一个名字可以订阅多个事件函数</span></span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">events</span>[eventName] = [callback]</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="comment">// 存在则push到指定数组的尾部保存</span></span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">events</span>[eventName].<span class="title function_">push</span>(callback)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 触发事件的方法</span></span><br><span class="line">  <span class="title function_">emit</span>(<span class="params">eventName, ...rest</span>) &#123;</span><br><span class="line">    <span class="comment">// 遍历执行所有订阅的事件</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">events</span>[eventName] &amp;&amp;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">events</span>[eventName].<span class="title function_">forEach</span>(<span class="function"><span class="params">f</span> =&gt;</span> f.<span class="title function_">apply</span>(<span class="variable language_">this</span>, rest))</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 移除订阅事件</span></span><br><span class="line">  <span class="title function_">remove</span>(<span class="params">eventName, callback</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">events</span>[eventName]) &#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">events</span>[eventName] = <span class="variable language_">this</span>.<span class="property">events</span>[eventName].<span class="title function_">filter</span>(<span class="function"><span class="params">f</span> =&gt;</span> f != callback)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 只执行一次订阅的事件，然后移除</span></span><br><span class="line">  <span class="title function_">once</span>(<span class="params">eventName, callback</span>) &#123;</span><br><span class="line">    <span class="comment">// 绑定的时fn, 执行的时候会触发fn函数</span></span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">fn</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">      <span class="title function_">callback</span>() <span class="comment">// fn函数中调用原有的callback</span></span><br><span class="line">      <span class="variable language_">this</span>.<span class="title function_">remove</span>(eventName, fn) <span class="comment">// 删除fn, 再次执行的时候之后执行一次</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">on</span>(eventName, fn)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="script中defer和async的区别"><a href="#script中defer和async的区别" class="headerlink" title="script中defer和async的区别"></a>script中defer和async的区别</h3><ul>
+<li><p>对于defer，我们可以认为是将外链的js放在了页面底部。js的加载不会阻塞页面的渲染和资源的加载。不过defer会按照原本的js的顺序执行，所以如果前后有依赖关系的js可以放心使用。</p>
+</li>
+<li><p>对于async，这个是html5中新增的属性，它的作用是能够异步的加载和执行脚本，不因为加载脚本而阻塞页面的加载。一旦加载到就会立刻执行在有async的情况下，js一旦下载好了就会执行，所以很有可能不是按照原本的顺序来执行的。如果js前后有依赖性，用async，就很有可能出错</p>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://juejin.im/post/5a1229596fb9a0451704cae8">推荐阅读：script中defer和async的区别</a></p>
+
         </article>
         <div class="post-tools" id="post-tools">
             <div class="post-tools-left">
@@ -795,18 +634,18 @@
         </div>
         <div class="share-main">
             <div class="share-main-all">
-                <div id="qrcode" title="https://hizai.cn/posts/5befea4f/">
+                <div id="qrcode" title="https://hizai.cn/posts/56f04048/">
                 </div>
                 <div class="reward-dec">使用手机访问这篇文章</div>
             </div>
         </div>
         <script type="text/javascript">
-            new QRCode(document.getElementById("qrcode"), "https://hizai.cn/posts/5befea4f/");
+            new QRCode(document.getElementById("qrcode"), "https://hizai.cn/posts/56f04048/");
         </script>
     </div>
 </div>
                 <div class="share-link weibo"><a class="share-button" target="_blank"
-    href="https://service.weibo.com/share/share.php?title=VIM 快捷键 - 详解常用的命令&amp;url=https://hizai.cn/posts/5befea4f/&amp;pic=/images/vim.webp"
+    href="https://service.weibo.com/share/share.php?title=前端面试八股文 | 涵盖常见问题与技巧&amp;url=https://hizai.cn/posts/56f04048/&amp;pic=/images/js.webp"
     title="分享到微博" rel="noopener external nofollow noreferrer noopener">
     <i class="fab fa-weibo" style="font-size:22px"></i>
 </a>
@@ -821,15 +660,9 @@
                 <div class="tag_share">
                     <div class="post-meta__tag-list">
                         
-                            <a href="/tags/VIM/" class="post-meta__tags">
+                            <a href="/tags/interview/" class="post-meta__tags">
                                 <span class="tags-punctuation">#</span>
-                                VIM
-                                <span class="tagsPageCount">1</span>
-                            </a>
-                        
-                            <a href="/tags/VSCode/" class="post-meta__tags">
-                                <span class="tags-punctuation">#</span>
-                                VSCode
+                                interview
                                 <span class="tagsPageCount">1</span>
                             </a>
                         
@@ -841,12 +674,12 @@
     <div class="post-copyright__author">
         <a class="post-copyright__original" title="该文章为原创文章，注意版权协议">原创</a>
         <a class="post-copyright-title" href="#">
-            <span>VIM 快捷键 - 详解常用的命令</span>
+            <span>前端面试八股文 | 涵盖常见问题与技巧</span>
         </a>
     </div>
     <div class="post-copyright__type">
         <span class="post-copyright-info" id="post-copyright-url">
-            <a href="/posts/5befea4f/">https://hizai.cn/posts/5befea4f/</a>
+            <a href="/posts/56f04048/">https://hizai.cn/posts/56f04048/</a>
         </span>
         <button class="post-copyright-copybtn" onclick="acrylic.copyPageUrl()">
             <i class="fas fa-paste copy-btn"></i>
@@ -860,22 +693,17 @@
 </div>
         <nav class="pagination-post" id="pagination">
     
-        <div class="prev-post pull-left">
-            <a href="/posts/56f04048/">
-                <div class="pagination-info">
-                    <div class="label">上一篇</div>
-                    <div class="prev_info">前端面试八股文 | 涵盖常见问题与技巧</div>
-                </div>
-            </a>
-        </div>
-        <div class="next-post pull-right">
-            <a href="/posts/d690fd48/">
-                <div class="pagination-info">
-                    <div class="label">下一篇</div>
-                    <div class="next_info">Vue3 provide inject如何通过injectKey保存类型</div>
-                </div>
-            </a>
-        </div>
+        
+            <div class="next-post pull-full">
+                <a href="/posts/5befea4f/">
+                    <div class="pagination-info">
+                        <div class="label">下一篇</div>
+                        <div class="next_info">VIM 快捷键 - 详解常用的命令</div>
+                    </div>
+                </a>
+            </div>
+                
+        
     
 </nav>
             
@@ -915,7 +743,7 @@
         <span>文章目录</span>
     </div>
     <div class="toc-content" id="toc-content">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#VIM-%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%9F%A5%E8%AF%A2"><span class="toc-text">VIM-快捷键查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E6%96%B9%E5%90%91%E9%94%AE%E7%9B%98"><span class="toc-text">移动方向键盘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%A1%A3%E6%9F%A5%E7%9C%8B"><span class="toc-text">文档查看</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%96%87%E6%9C%AC"><span class="toc-text">插入文本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E6%9C%AC"><span class="toc-text">删除文本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%93%8D%E4%BD%9C"><span class="toc-text">特殊操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E6%96%87%E6%9C%AC"><span class="toc-text">选择文本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E4%B8%AD%E6%96%87%E6%9C%AC%E5%90%8E%E6%93%8D%E4%BD%9C"><span class="toc-text">选中文本后操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VSCode%E9%85%8D%E7%BD%AE"><span class="toc-text">VSCode配置</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#DOM%E4%BA%8B%E4%BB%B6%E7%BA%A7%E5%88%AB"><span class="toc-text">DOM事件级别</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E6%B5%81"><span class="toc-text">事件流</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AFEventLoop"><span class="toc-text">事件循环EventLoop</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3JS%E7%9A%84%E5%BC%82%E6%AD%A5%EF%BC%9F"><span class="toc-text">如何理解JS的异步？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86"><span class="toc-text">浏览器渲染原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#webpack%E7%AE%80%E6%98%93%E6%B5%81%E7%A8%8B"><span class="toc-text">webpack简易流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE"><span class="toc-text">原型和原型链</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#new-%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="toc-text">new 的实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85%E6%A8%A1%E5%BC%8F"><span class="toc-text">发布订阅模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#script%E4%B8%ADdefer%E5%92%8Casync%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">script中defer和async的区别</span></a></li></ol>
     </div>
 </div>
             
