@@ -7,6 +7,7 @@ description: 使用命令行和下载方式在 Linux 系统上安装 Helm。
 cover: /images/helm.svg
 tags:
   - Helm
+abbrlink: 23f6cb56
 ---
 ## 安装
 

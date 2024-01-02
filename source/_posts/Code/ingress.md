@@ -2,14 +2,15 @@
 title: Kubernetes Ingress、MetalLB 的部署指南
 date: '2023-11-27'
 categories: Kubernetes
-keywords: Kubernetes, K8s, Ingress, MetalLB
+keywords: 'Kubernetes, K8s, Ingress, MetalLB'
 description: 在 Kubernetes 集群中部署 Ingress、MetalLB 的详细步骤。
 cover: /images/k8s.svg
 tags:
-  - Kubernetes 
+  - Kubernetes
   - K8s
-  - Ingress 
+  - Ingress
   - MetalLB
+abbrlink: 6019757c
 ---
 ## 1.下载并应用
 ```bash

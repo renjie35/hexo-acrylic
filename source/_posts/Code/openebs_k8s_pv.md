@@ -2,14 +2,15 @@
 title: Kubernetes下的OpenEBS安装与PV供应配置
 date: '2023-11-27'
 categories: Kubernetes
-keywords: OpenEBS, Kubernetes, K8s, PV供应, iSCSI, cStor, NFS
+keywords: 'OpenEBS, Kubernetes, K8s, PV供应, iSCSI, cStor, NFS'
 description: 在Kubernetes上安装OpenEBS，并配置PV供应，实现RWX存储。
 cover: /images/k8s.svg
-tags:  
-  - Kubernetes 
+tags:
+  - Kubernetes
   - K8s
-  - OpenEBS 
+  - OpenEBS
   - PV供应
+abbrlink: 4828fc0e
 ---
 ## 安装openebs PV供应
 
