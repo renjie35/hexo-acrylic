@@ -7,6 +7,7 @@ description: 使用kubeadm在CentOS上搭建Kubernetes集群的详细步骤。
 cover: /images/css.webp
 tags:
   - k8s
+abbrlink: 3d4bd17d
 ---
 ## 换源（非必要）
 ```
