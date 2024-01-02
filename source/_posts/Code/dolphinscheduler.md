@@ -4,7 +4,7 @@ date: '2023-11-25'
 categories: Kubernetes
 keywords: 'Dolphinscheduler, Kubernetes, Helm, K8s'
 description: 使用 Helm 在 Kubernetes 上部署 DolphinScheduler 的详细步骤。
-cover: /images/dolphinscheduler.webp
+cover: /images/dolphinscheduler.png
 tags:
   - Dolphinscheduler
   - Kubernetes

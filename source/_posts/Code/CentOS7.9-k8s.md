@@ -4,7 +4,7 @@ date: '2023-12-29'
 categories: Kubernetes
 keywords: Kubernetes-K8s-集群
 description: 使用kubeadm在CentOS上搭建Kubernetes集群的详细步骤。
-cover: /images/k8s.svg
+cover: /images/k8s.png
 tags:
   - CentOS7
   - Kubernetes

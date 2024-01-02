@@ -4,7 +4,7 @@ date: '2023-11-27'
 categories: Kubernetes
 keywords: 'OpenEBS, Kubernetes, K8s, PV供应, iSCSI, cStor, NFS'
 description: 在Kubernetes上安装OpenEBS，并配置PV供应，实现RWX存储。
-cover: /images/k8s.svg
+cover: /images/k8s.png
 tags:
   - Kubernetes
   - K8s

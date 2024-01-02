@@ -4,7 +4,7 @@ date: '2023-12-20'
 categories: KubeSphere
 keywords: 'KubeSphere, DevOps, Kubernetes, K8s'
 description: 在 Kubernetes 集群中部署 KubeSphere 的详细步骤，并开启DevOps配置。
-cover: /images/kubesphere.svg
+cover: /images/kubesphere.png
 tags:
   - KubeSphere
   - K8s
