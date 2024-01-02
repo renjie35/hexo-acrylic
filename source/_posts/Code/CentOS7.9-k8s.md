@@ -1,12 +1,14 @@
 ---
-title: CentOS7.9安装k8s | Kubernetes集群搭建
+title: CentOS7.9安装K8s | Kubernetes集群搭建
 date: '2023-12-29'
-categories: k8s
-keywords: Kubernetes-k8s-集群
+categories: Kubernetes
+keywords: Kubernetes-K8s-集群
 description: 使用kubeadm在CentOS上搭建Kubernetes集群的详细步骤。
-cover: /images/css.webp
+cover: /images/k8s.svg
 tags:
-  - k8s
+  - CentOS7
+  - Kubernetes
+  - K8s
 abbrlink: 3d4bd17d
 ---
 ## 换源（非必要）
