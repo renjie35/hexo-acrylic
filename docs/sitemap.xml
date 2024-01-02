@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hizai.cn/posts/3d4bd17d/</loc>
+    
+    <lastmod>2023-12-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hizai.cn/posts/56f04048/</loc>
     
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2023-04-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -103,7 +112,7 @@
 
   <url>
     <loc>https://hizai.cn/</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2024-01-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -111,56 +120,63 @@
   
   <url>
     <loc>https://hizai.cn/tags/CSS/</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://hizai.cn/tags/VIM/</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://hizai.cn/tags/VSCode/</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://hizai.cn/tags/JavaScript/</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://hizai.cn/tags/Vue3/</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://hizai.cn/tags/Vite/</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://hizai.cn/tags/TypeScript/</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://hizai.cn/tags/interview/</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2024-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hizai.cn/tags/k8s/</loc>
+    <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -169,28 +185,35 @@
   
   <url>
     <loc>https://hizai.cn/categories/CSS/</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://hizai.cn/categories/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://hizai.cn/categories/Vue3/</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://hizai.cn/categories/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0/</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2024-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hizai.cn/categories/k8s/</loc>
+    <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

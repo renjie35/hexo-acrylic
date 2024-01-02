@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VIM 快捷键 - 详解常用的命令 | Neco</title>
+<title>CentOS7.9安装k8s | Kubernetes集群搭建 | Neco</title>
 <noscript>开启Javascript是必要的</noscript>
 <link rel="icon" type="image/x-icon" href="/img/avatar.webp">
 <link rel="apple-touch-icon" href="/img/avatar.webp">
 <meta name="apple-mobile-web-app-title" content="Neco">
 <link rel="bookmark" href="/img/avatar.webp">
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/avatar.webp">
-<meta name="description" content="本文将详细介绍VS Code中常用的VIM快捷键，帮助您更高效地使用VIM编辑器，适合新手入门和资深用户查漏补缺。">
+<meta name="description" content="使用kubeadm在CentOS上搭建Kubernetes集群的详细步骤。">
 <meta name="theme-color" content="#1C1C1F">
 <link rel="stylesheet" href="/css/var.css">
 <link rel="stylesheet" href="/css/main.css">
@@ -352,7 +352,7 @@
         </div>
         <div id="page-name-mask">
             <div id="page-name">
-                <a id="page-name-text" onclick="acrylic.toTop()">VIM 快捷键 - 详解常用的命令</a>
+                <a id="page-name-text" onclick="acrylic.toTop()">CentOS7.9安装k8s | Kubernetes集群搭建</a>
             </div>
         </div>
         <div id="menus">
@@ -445,7 +445,7 @@
 </nav>
     
         <div class="coverdiv" id="coverdiv">
-    <img id="post-cover" class="nolazyload" src="/images/vim.webp" alt="cover">
+    <img id="post-cover" class="nolazyload" src="/images/css.webp" alt="cover">
 </div>
 <div id="post-info">
     <div id="post-firstinfo">
@@ -455,37 +455,32 @@
             </a>
             <span class="post-meta-categories">
                 
-                    <a class="post-meta-categories" href="/categories/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/">工具分享</a>
+                    <a class="post-meta-categories" href="/categories/k8s/">k8s</a>
                 
             </span>
             <div class="tag_share">
                 <div class="post-meta__tag-list">
                     
-                        <a class="post-meta__tags" href="/tags/VIM/">
+                        <a class="post-meta__tags" href="/tags/k8s/">
                             <span class="tags-punctuation">#</span>
-                            <span class="tags-name">VIM</span>
-                        </a>
-                    
-                        <a class="post-meta__tags" href="/tags/VSCode/">
-                            <span class="tags-punctuation">#</span>
-                            <span class="tags-name">VSCode</span>
+                            <span class="tags-name">k8s</span>
                         </a>
                     
                 </div>
             </div>
         </div>
     </div>
-    <h1 class="post-title">VIM 快捷键 - 详解常用的命令</h1>
+    <h1 class="post-title">CentOS7.9安装k8s | Kubernetes集群搭建</h1>
     <div id="post-meta">
         <div class="meta-secondline">
             <span class="post-meta-date" title="发布于">
                 <i class="post-meta-icon fa-fw fas fa-calendar"></i>
-                <time datetime="2023-04-20T08:00:00+08:00"></time>
+                <time datetime="2023-12-29T08:00:00+08:00"></time>
             </span>
             
                 <span class="post-meta-date" title="更新于">
                     <i class="post-meta-icon fa-solid fa-clock-rotate-left"></i>
-                    <time datetime="2023-04-24T22:45:44+08:00"></time>
+                    <time datetime="2023-12-29T09:31:13+08:00"></time>
                 </span>
             
             
@@ -519,275 +514,149 @@
                 <main class="layout" id="content-inner">
     <div id="post">
         <article class="post-content" id="article-container">
-            <h2 id="VIM-快捷键查询"><a href="#VIM-快捷键查询" class="headerlink" title="VIM-快捷键查询"></a>VIM-快捷键查询</h2><h3 id="移动方向键盘"><a href="#移动方向键盘" class="headerlink" title="移动方向键盘"></a>移动方向键盘</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>j</code></td>
-<td align="left">下移</td>
-</tr>
-<tr>
-<td align="center"><code>k</code></td>
-<td align="left">上移</td>
-</tr>
-<tr>
-<td align="center"><code>h</code></td>
-<td align="left">左移</td>
-</tr>
-<tr>
-<td align="center"><code>l</code></td>
-<td align="left">右移</td>
-</tr>
-<tr>
-<td align="center"><code>w</code></td>
-<td align="left">下一个单词</td>
-</tr>
-<tr>
-<td align="center"><code>W</code></td>
-<td align="left">下一个单词（以空格分隔的词）</td>
-</tr>
-<tr>
-<td align="center"><code>b</code></td>
-<td align="left">上一个单词</td>
-</tr>
-<tr>
-<td align="center"><code>B</code></td>
-<td align="left">上一个单词（以空格分隔的词）</td>
-</tr>
-<tr>
-<td align="center"><code>2w/2W/2b/2B</code></td>
-<td align="left">下&#x2F;上第二个单词</td>
-</tr>
-<tr>
-<td align="center"><code>^</code></td>
-<td align="left">非空行首&lt;推荐改为H&gt;</td>
-</tr>
-<tr>
-<td align="center"><code>g + _</code></td>
-<td align="left">非空行尾&lt;推荐改为L&gt;</td>
-</tr>
-<tr>
-<td align="center"><code>0</code></td>
-<td align="left">行首</td>
-</tr>
-<tr>
-<td align="center"><code>$</code></td>
-<td align="left">行尾</td>
-</tr>
-<tr>
-<td align="center"><code>gg</code></td>
-<td align="left">文件开头</td>
-</tr>
-<tr>
-<td align="center"><code>G</code></td>
-<td align="left">文件末尾</td>
-</tr>
-</tbody></table>
-<h3 id="文档查看"><a href="#文档查看" class="headerlink" title="文档查看"></a>文档查看</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>（</code></td>
-<td align="left">上一段落（包含空格）</td>
-</tr>
-<tr>
-<td align="center"><code>）</code></td>
-<td align="left">下一段落（包含空格）</td>
-</tr>
-<tr>
-<td align="center"><code>&#123;</code></td>
-<td align="left">上一段落（不含空格）</td>
-</tr>
-<tr>
-<td align="center"><code>&#125;</code></td>
-<td align="left">下一段落（不含空格）</td>
-</tr>
-<tr>
-<td align="center"><code>[[</code></td>
-<td align="left">文档开头</td>
-</tr>
-<tr>
-<td align="center"><code>]]</code></td>
-<td align="left">文档结尾</td>
-</tr>
-</tbody></table>
-<h3 id="插入文本"><a href="#插入文本" class="headerlink" title="插入文本"></a>插入文本</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>a</code></td>
-<td align="left">光标后插入</td>
-</tr>
-<tr>
-<td align="center"><code>A</code></td>
-<td align="left">行末插入</td>
-</tr>
-<tr>
-<td align="center"><code>i</code></td>
-<td align="left">光标前插入</td>
-</tr>
-<tr>
-<td align="center"><code>o</code></td>
-<td align="left">光标下一行插入</td>
-</tr>
-<tr>
-<td align="center"><code>O</code></td>
-<td align="left">光标上一行插入</td>
-</tr>
-<tr>
-<td align="center"><code>cc</code></td>
-<td align="left">当前行替换插入</td>
-</tr>
-</tbody></table>
-<h3 id="删除文本"><a href="#删除文本" class="headerlink" title="删除文本"></a>删除文本</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>dd</code></td>
-<td align="left">删除当前行</td>
-</tr>
-<tr>
-<td align="center"><code>x</code></td>
-<td align="left">删除光标处文本</td>
-</tr>
-<tr>
-<td align="center"><code>dw</code></td>
-<td align="left">删除光标处到单词末尾</td>
-</tr>
-<tr>
-<td align="center"><code>d0</code></td>
-<td align="left">删除到行首</td>
-</tr>
-<tr>
-<td align="center"><code>d$</code></td>
-<td align="left">删除到行尾</td>
-</tr>
-<tr>
-<td align="center"><code>2dd</code></td>
-<td align="left">删除2行</td>
-</tr>
-<tr>
-<td align="center"><code>dgg</code></td>
-<td align="left">删除到文件开头</td>
-</tr>
-<tr>
-<td align="center"><code>dG</code></td>
-<td align="left">删除到文件末尾</td>
-</tr>
-</tbody></table>
-<h3 id="特殊操作"><a href="#特殊操作" class="headerlink" title="特殊操作"></a>特殊操作</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>yy</code></td>
-<td align="left">复制到缓冲器（ctrl + c功能一致但是缓冲区不同）</td>
-</tr>
-<tr>
-<td align="center"><code>p</code></td>
-<td align="left">粘贴到光标后</td>
-</tr>
-<tr>
-<td align="center"><code>P</code></td>
-<td align="left">粘贴到光标前</td>
-</tr>
-<tr>
-<td align="center"><code>u</code></td>
-<td align="left">撤销</td>
-</tr>
-<tr>
-<td align="center"><code>ctrl + r</code></td>
-<td align="left">重做</td>
-</tr>
-<tr>
-<td align="center"><code>/xxx</code></td>
-<td align="left">光标后搜索xxx</td>
-</tr>
-<tr>
-<td align="center"><code>?xxx</code></td>
-<td align="left">光标前搜索xxx</td>
-</tr>
-<tr>
-<td align="center"><code>n</code></td>
-<td align="left">移动到下一个搜索结果</td>
-</tr>
-<tr>
-<td align="center"><code>N</code></td>
-<td align="left">移动到上一个搜索结果</td>
-</tr>
-</tbody></table>
-<h3 id="选择文本"><a href="#选择文本" class="headerlink" title="选择文本"></a>选择文本</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>v</code></td>
-<td align="left">光标处开始选中</td>
-</tr>
-<tr>
-<td align="center"><code>V</code></td>
-<td align="left">光标当前行选中</td>
-</tr>
-<tr>
-<td align="center"><code>ESC</code></td>
-<td align="left">退出选中</td>
-</tr>
-</tbody></table>
-<h3 id="选中文本后操作"><a href="#选中文本后操作" class="headerlink" title="选中文本后操作"></a>选中文本后操作</h3><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>~</code></td>
-<td align="left">切换大小写</td>
-</tr>
-<tr>
-<td align="center"><code>d</code></td>
-<td align="left">删除</td>
-</tr>
-<tr>
-<td align="center"><code>c</code></td>
-<td align="left">删除后进入插入状态</td>
-</tr>
-<tr>
-<td align="center"><code>y</code></td>
-<td align="left">复制</td>
-</tr>
-<tr>
-<td align="center"><code>p</code></td>
-<td align="left">粘贴</td>
-</tr>
-</tbody></table>
-<h2 id="VSCode配置"><a href="#VSCode配置" class="headerlink" title="VSCode配置"></a>VSCode配置</h2><p><code>VSCode</code> 快捷键配置：</p>
-<ul>
-<li>方便键盘按键移动</li>
+            <h2 id="换源（非必要）"><a href="#换源（非必要）" class="headerlink" title="换源（非必要）"></a>换源（非必要）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">yum install -y wget</span><br><span class="line">cd /etc/yum.repos.d</span><br><span class="line">wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo</span><br><span class="line">wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo</span><br><span class="line">yum clean all</span><br><span class="line">yum makecache</span><br></pre></td></tr></table></figure>
+
+<h2 id="基础安装"><a href="#基础安装" class="headerlink" title="基础安装"></a>基础安装</h2><p>设置主机名： </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hostnamectl set-hostname &lt;hostname&gt;</span><br></pre></td></tr></table></figure>
+
+<p>修改host</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cat &gt;&gt; /etc/hosts &lt;&lt; EOF</span><br><span class="line">172.16.100.236  k8s-master</span><br><span class="line">172.16.100.12   k8s-node1</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+
+<p>将桥接的IPv4流量传递到iptables的链</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; /etc/sysctl.d/k8s.conf &lt;&lt; EOF</span><br><span class="line">net.bridge.bridge-nf-call-ip6tables = 1</span><br><span class="line">net.bridge.bridge-nf-call-iptables = 1</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+
+<p>生效<br><code>sysctl --system</code></p>
+<p>时间同步： </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum install ntpdate -y</span><br><span class="line">ntpdate time.windows.com</span><br></pre></td></tr></table></figure>
+
+
+<p>关闭swap、防火墙和selinux</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 关闭swap：(如果使用swap，则其实node的pod使用内存总和可能超过了node的内存)</span><br><span class="line">swapoff -a  # 临时</span><br><span class="line">sudo sed -i &#x27;/swap/s/^/#/&#x27; /etc/fstab  # 永久</span><br><span class="line"></span><br><span class="line"># 关闭防火墙：</span><br><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl disable firewalld</span><br><span class="line"></span><br><span class="line"># 关闭selinux：(selinux安全机制较复杂，可能会与k8s本身的流量机制冲突，centos与ubunutu可能不同，而且ubuntu部分发行版本默认就没装selinux)</span><br><span class="line">sed -i &#x27;s/enforcing/disabled/&#x27; /etc/selinux/config  # 永久</span><br><span class="line">setenforce 0  # 临时</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h2 id="使用阿里云yum源安装kubelet-kubeadm-kubectl"><a href="#使用阿里云yum源安装kubelet-kubeadm-kubectl" class="headerlink" title="使用阿里云yum源安装kubelet kubeadm kubectl"></a>使用阿里云yum源安装kubelet kubeadm kubectl</h2><p>新增源</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">cat &lt;&lt;EOF &gt; /etc/yum.repos.d/kubernetes.repo</span><br><span class="line">[kubernetes]</span><br><span class="line">name=Kubernetes</span><br><span class="line">baseurl=https://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-x86_64/</span><br><span class="line">enabled=1</span><br><span class="line">gpgcheck=0</span><br><span class="line">repo_gpgcheck=0</span><br><span class="line">gpgkey=https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg https://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+<p>安装指定版本(如非必要别安装最新版本，踩坑得自己埋)<br><code>yum install -y  kubeadm-1.20.2 kubelet-1.20.2 kubectl-1.20.2</code><br>开启kubelet服务<br><code>systemctl enable kubelet.service</code></p>
+<h2 id="安装containerd"><a href="#安装containerd" class="headerlink" title="安装containerd"></a>安装containerd</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum install -y yum-utils</span><br><span class="line">yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">yum -y install containerd.io</span><br></pre></td></tr></table></figure>
+<p>生成默认配置<br><code>containerd config default &gt; /etc/containerd/config.toml</code><br>配置 systemd cgroup 驱动程序<br><code>sed -i &#39;s/SystemdCgroup = false/SystemdCgroup = true/g&#39; /etc/containerd/config.toml</code></p>
+<p>启动</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl enable containerd --now</span><br><span class="line">systemctl status containerd</span><br><span class="line">systemctl restart containerd</span><br></pre></td></tr></table></figure>
+
+<h2 id="初始化平面节点-master"><a href="#初始化平面节点-master" class="headerlink" title="初始化平面节点(master)"></a>初始化平面节点(master)</h2><p>导出 kubeadm 配置文件 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kubeadm config <span class="built_in">print</span> init-defaults --component-configs \</span><br><span class="line">KubeProxyConfiguration,KubeletConfiguration &gt; kubeadm-config.yaml</span><br></pre></td></tr></table></figure>
+
+<p>替换kubeadm.yml为国内的源</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">imageRepository:</span> <span class="string">registry.aliyuncs.com/google_containers</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
+
+<p>查看镜像列表</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubeadm config images list --config kubeadm.yml</span><br></pre></td></tr></table></figure>
+
+<p>拉取镜像</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> `kubeadm config images list --config kubeadm.yml`;<span class="keyword">do</span> ctr images pull <span class="variable">$i</span>;<span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+
+<p>初始化</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">kubeadm init --upload-certs --apiserver-advertise-address=172.16.100.48 --image-repository registry.aliyuncs.com/google_containers --kubernetes-version v1.23.17 --service-cidr=10.96.0.0/12 --pod-network-cidr=192.168.0.0/16</span><br><span class="line"></span><br><span class="line"><span class="comment"># --upload-certs 将证书保存到 kube-system 名称空间下名为 extension-apiserver-authentication 的 configmap 中，这样其他控制平面加入的话只要加上 --control-plane --certificate-key 并带上相应的key就可以拿到证书并下载到本地。</span></span><br><span class="line"><span class="comment"># --apiserver-advertise-address 为k8s-master的ip</span></span><br></pre></td></tr></table></figure>
+
+<p>重置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubeadm reset</span><br></pre></td></tr></table></figure>
+
+<p>初始化集群配置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p $HOME/.kube</span><br><span class="line">sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config</span><br><span class="line">sudo chown $(id -u):$(id -g) $HOME/.kube/config</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="安装CNI网络插件，calico-flannel-cilium-三选1"><a href="#安装CNI网络插件，calico-flannel-cilium-三选1" class="headerlink" title="安装CNI网络插件，calico flannel cilium 三选1"></a>安装CNI网络插件，calico flannel cilium 三选1</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">wget https://docs.projectcalico.org/v3.14/manifests/calico.yaml --no-check-certificate</span><br><span class="line"></span><br><span class="line">把calico.yaml里pod所在网段改成kubeadm init时选项--pod-network-cidr所指定的网段，</span><br><span class="line">直接用vim编辑打开此文件查找192，按如下标记进行修改：</span><br><span class="line"># no effect. This should fall within `--cluster-cidr`.</span><br><span class="line"># - name: CALICO_IPV4POOL_CIDR</span><br><span class="line">#   value: &quot;192.168.0.0/16&quot;</span><br><span class="line"># Disable file logging so `kubectl logs` works.</span><br><span class="line">- name: CALICO_DISABLE_FILE_LOGGING</span><br><span class="line">value: &quot;true&quot;</span><br><span class="line">把两个#及#后面的空格去掉，并把192.168.0.0/16改成10.96.0.0/12</span><br><span class="line"># no effect. This should fall within `--cluster-cidr`.</span><br><span class="line">- name: CALICO_IPV4POOL_CIDR</span><br><span class="line">value: &quot;10.244.0.0/16&quot;</span><br><span class="line"># Disable file logging so `kubectl logs` works.</span><br><span class="line">- name: CALICO_DISABLE_FILE_LOGGING</span><br><span class="line">value: &quot;true&quot;</span><br></pre></td></tr></table></figure>
+
+
+<p>使用kubectl create 创建相关calico配置</p>
+<p><a target="_blank" rel="noopener" href="https://docs.tigera.io/calico/latest/getting-started/kubernetes/quickstart">https://docs.tigera.io/calico/latest/getting-started/kubernetes/quickstart</a></p>
+<p>同步到其他节点</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp root@主节点服务器地址:/env/calico/calico.yaml /env/calico/</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="demo测试创建pod"><a href="#demo测试创建pod" class="headerlink" title="demo测试创建pod"></a>demo测试创建pod</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">kubectl create deployment nginx --image=nginx</span><br><span class="line">kubectl expose deployment nginx --port=80 --type=NodePort</span><br><span class="line">kubectl get pod,svc</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="错误原因："><a href="#错误原因：" class="headerlink" title="错误原因："></a>错误原因：</h2><ul>
+<li><p>配置 kubelet 使用 containerd 作为其容器运行时</p>
+<p>vi &#x2F;var&#x2F;lib&#x2F;kubelet&#x2F;kubeadm-flags.env</p>
+<p>在末尾添加--container-runtime-endpoint&#x3D;unix:&#x2F;&#x2F;&#x2F;run&#x2F;containerd&#x2F;containerd.sock</p>
+</li>
+<li><p>[ERROR FileContent--proc-sys-net-bridge-bridge-nf-call-iptables] or [ERROR FileContent--proc-sys-net-ipv4-ip_forward]</p>
+</li>
 </ul>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//setting.json</span></span><br><span class="line"><span class="attr">&quot;vim.normalModeKeyBindings&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;before&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;H&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;after&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;^&quot;</span><span class="punctuation">]</span> <span class="comment">//大写H 移动到行首（非空文字）</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;before&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;L&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;after&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;g&quot;</span><span class="punctuation">,</span> <span class="string">&quot;_&quot;</span><span class="punctuation">]</span> <span class="comment">//大写L 移动到行尾（非空文字）</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">modprobe br_netfilter</span><br><span class="line">echo 1 &gt; /proc/sys/net/bridge/bridge-nf-call-iptables</span><br><span class="line">echo 1 &gt; /proc/sys/net/ipv4/ip_forward</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改containerd的沙盒配置镜像</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/containerd/config.toml</span><br><span class="line">systemctl daemon-reload &amp;&amp; systemctl restart containerd</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>The connection to the server localhost:8080 was refused - did you specify the right host or port?</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;export KUBECONFIG=/etc/kubernetes/admin.conf&quot; &gt;&gt; ~/.bash_profile</span><br><span class="line">source ~/.bash_profile</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scp root@主节点服务器地址:/etc/kubernetes/admin.conf /etc/kubernetes/</span><br><span class="line">echo &quot;export KUBECONFIG=/etc/kubernetes/admin.conf&quot; &gt;&gt; ~/.bash_profile</span><br><span class="line">source ~/.bash_profile</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>reboot后无法启动k8s，kubelet无法启动</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi /var/lib/kubelet/kubeadm-flags.env</span><br><span class="line">删除--network-plugin</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>K8s Master当作Node使用的方法</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Master当作Node使用</span><br><span class="line">kubectl taint node --all node-role.kubernetes.io/master-</span><br><span class="line"># 将 Master 恢复成 Master Only 状态</span><br><span class="line">kubectl taint node --all node-role.kubernetes.io/master=&quot;&quot;:NoSchedule</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>docker 拉取问题 missing signature key</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># 卸载旧的docker</span><br><span class="line">yum erase docker \</span><br><span class="line">                  docker-client \</span><br><span class="line">                  docker-client-latest \</span><br><span class="line">                  docker-common \</span><br><span class="line">                  docker-latest \</span><br><span class="line">                  docker-latest-logrotate \</span><br><span class="line">                  docker-logrotate \</span><br><span class="line">                  docker-selinux \</span><br><span class="line">                  docker-engine-selinux \</span><br><span class="line">                  docker-engine \</span><br><span class="line">                  docker-ce</span><br><span class="line">  </span><br><span class="line"># 新增新的</span><br><span class="line">yum install docker-ce -y</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他插件"><a href="#其他插件" class="headerlink" title="其他插件"></a>其他插件</h2><p>安装开启docker</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum install docker -y</span><br><span class="line">systemctl <span class="built_in">enable</span> docker &amp;&amp; systemctl start docker</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="文档地址"><a href="#文档地址" class="headerlink" title="文档地址"></a>文档地址</h2><p><a target="_blank" rel="noopener" href="https://kubernetes.io/zh-cn/docs/setup/production-environment/tools/kubeadm/">https://kubernetes.io/zh-cn/docs/setup/production-environment/tools/kubeadm/</a></p>
+<h2 id="kubectl命令"><a href="#kubectl命令" class="headerlink" title="kubectl命令"></a>kubectl命令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># 日志journalctl -xefu kubelet</span><br><span class="line"></span><br><span class="line">kubectl describe pod xxx </span><br><span class="line">kubectl logs &#123;podsname&#125; -n xxx</span><br><span class="line"></span><br><span class="line">kubectl delete deployment &#123;deploymentname&#125;</span><br><span class="line"></span><br><span class="line">kubectl delete pod  &#123;podsname&#125;</span><br><span class="line"></span><br><span class="line">kubectl apply -f xxxx.yaml</span><br><span class="line"></span><br><span class="line">kubectl delete -f xxxx.yaml</span><br><span class="line"></span><br><span class="line">kubectl get namespace</span><br><span class="line">kubectl create namespace xxx</span><br></pre></td></tr></table></figure>
+
+<p>列出所有 deployments (别名 <code>deploy</code>):</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kubectl get deploy</span><br><span class="line">kubectl get deploy -n test # with test namespace</span><br></pre></td></tr></table></figure>
+
+<p>扩缩容 api 至 3 个副本:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kubectl scale --replicas=3 deploy dolphinscheduler-api</span><br><span class="line">kubectl scale --replicas=3 deploy dolphinscheduler-api -n test # with test namespace</span><br></pre></td></tr></table></figure>
+
+<p>列出所有 statefulsets (别名 <code>sts</code>):</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kubectl get sts</span><br><span class="line">kubectl get sts -n test # with test namespace</span><br></pre></td></tr></table></figure>
+
+<p>扩缩容 master 至 2 个副本:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kubectl scale --replicas=2 sts dolphinscheduler-master</span><br><span class="line">kubectl scale --replicas=2 sts dolphinscheduler-master -n test # with test namespace</span><br></pre></td></tr></table></figure>
+
+<p>扩缩容 worker 至 6 个副本:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kubectl scale --replicas=6 sts dolphinscheduler-worker</span><br><span class="line">kubectl scale --replicas=6 sts dolphinscheduler-worker -n test # with test namespace</span><br></pre></td></tr></table></figure>
+
+<p>设置node节点不可调度、驱逐node节点</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 不可调度</span><br><span class="line">kubectl cordon &lt;node-name&gt;</span><br><span class="line"># 取消不可调度</span><br><span class="line">kubectl uncordon &lt;node-name&gt;</span><br><span class="line"></span><br><span class="line"># 驱逐！！！会将所有节点去除</span><br><span class="line">kubectl drain --ignore-daemonsets &lt;node-name&gt;</span><br><span class="line"># 删除节点</span><br><span class="line">kubectl delete node &lt;node-name&gt;</span><br></pre></td></tr></table></figure>
+
+<p>快速回滚</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#回滚到Deployment上一个版本</span><br><span class="line">kubectl rollout undo &lt;deployment-name&gt; </span><br><span class="line">#回滚到Deployment到某一个版本,需要先查询版本列表:</span><br><span class="line">kubectl rollout history &lt;deployment-name&gt; </span><br><span class="line">kubectl rollout undo &lt;deployment-name&gt;  --to-revision=2</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>添加标签并在yaml的<strong>nodeSelector</strong>中使用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl label nodes &lt;node-name&gt; disktype=ssd</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">...</span></span><br><span class="line">  <span class="attr">nodeSelector:</span></span><br><span class="line">    <span class="attr">disktype:</span> <span class="string">ssd</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
+
+
         </article>
         <div class="post-tools" id="post-tools">
             <div class="post-tools-left">
@@ -799,18 +668,18 @@
         </div>
         <div class="share-main">
             <div class="share-main-all">
-                <div id="qrcode" title="https://hizai.cn/posts/5befea4f/">
+                <div id="qrcode" title="https://hizai.cn/posts/3d4bd17d/">
                 </div>
                 <div class="reward-dec">使用手机访问这篇文章</div>
             </div>
         </div>
         <script type="text/javascript">
-            new QRCode(document.getElementById("qrcode"), "https://hizai.cn/posts/5befea4f/");
+            new QRCode(document.getElementById("qrcode"), "https://hizai.cn/posts/3d4bd17d/");
         </script>
     </div>
 </div>
                 <div class="share-link weibo"><a class="share-button" target="_blank"
-    href="https://service.weibo.com/share/share.php?title=VIM 快捷键 - 详解常用的命令&amp;url=https://hizai.cn/posts/5befea4f/&amp;pic=/images/vim.webp"
+    href="https://service.weibo.com/share/share.php?title=CentOS7.9安装k8s | Kubernetes集群搭建&amp;url=https://hizai.cn/posts/3d4bd17d/&amp;pic=/images/css.webp"
     title="分享到微博" rel="noopener external nofollow noreferrer noopener">
     <i class="fab fa-weibo" style="font-size:22px"></i>
 </a>
@@ -825,15 +694,9 @@
                 <div class="tag_share">
                     <div class="post-meta__tag-list">
                         
-                            <a href="/tags/VIM/" class="post-meta__tags">
+                            <a href="/tags/k8s/" class="post-meta__tags">
                                 <span class="tags-punctuation">#</span>
-                                VIM
-                                <span class="tagsPageCount">1</span>
-                            </a>
-                        
-                            <a href="/tags/VSCode/" class="post-meta__tags">
-                                <span class="tags-punctuation">#</span>
-                                VSCode
+                                k8s
                                 <span class="tagsPageCount">1</span>
                             </a>
                         
@@ -845,12 +708,12 @@
     <div class="post-copyright__author">
         <a class="post-copyright__original" title="该文章为原创文章，注意版权协议">原创</a>
         <a class="post-copyright-title" href="#">
-            <span>VIM 快捷键 - 详解常用的命令</span>
+            <span>CentOS7.9安装k8s | Kubernetes集群搭建</span>
         </a>
     </div>
     <div class="post-copyright__type">
         <span class="post-copyright-info" id="post-copyright-url">
-            <a href="/posts/5befea4f/">https://hizai.cn/posts/5befea4f/</a>
+            <a href="/posts/3d4bd17d/">https://hizai.cn/posts/3d4bd17d/</a>
         </span>
         <button class="post-copyright-copybtn" onclick="acrylic.copyPageUrl()">
             <i class="fas fa-paste copy-btn"></i>
@@ -864,22 +727,17 @@
 </div>
         <nav class="pagination-post" id="pagination">
     
-        <div class="prev-post pull-left">
-            <a href="/posts/56f04048/">
-                <div class="pagination-info">
-                    <div class="label">上一篇</div>
-                    <div class="prev_info">前端面试八股文 | 涵盖常见问题与技巧</div>
-                </div>
-            </a>
-        </div>
-        <div class="next-post pull-right">
-            <a href="/posts/d690fd48/">
-                <div class="pagination-info">
-                    <div class="label">下一篇</div>
-                    <div class="next_info">Vue3 provide inject如何通过injectKey保存类型</div>
-                </div>
-            </a>
-        </div>
+        
+            <div class="next-post pull-full">
+                <a href="/posts/56f04048/">
+                    <div class="pagination-info">
+                        <div class="label">下一篇</div>
+                        <div class="next_info">前端面试八股文 | 涵盖常见问题与技巧</div>
+                    </div>
+                </a>
+            </div>
+                
+        
     
 </nav>
             
@@ -919,7 +777,7 @@
         <span>文章目录</span>
     </div>
     <div class="toc-content" id="toc-content">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#VIM-%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%9F%A5%E8%AF%A2"><span class="toc-text">VIM-快捷键查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E6%96%B9%E5%90%91%E9%94%AE%E7%9B%98"><span class="toc-text">移动方向键盘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%A1%A3%E6%9F%A5%E7%9C%8B"><span class="toc-text">文档查看</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%96%87%E6%9C%AC"><span class="toc-text">插入文本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E6%9C%AC"><span class="toc-text">删除文本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%93%8D%E4%BD%9C"><span class="toc-text">特殊操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E6%96%87%E6%9C%AC"><span class="toc-text">选择文本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E4%B8%AD%E6%96%87%E6%9C%AC%E5%90%8E%E6%93%8D%E4%BD%9C"><span class="toc-text">选中文本后操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VSCode%E9%85%8D%E7%BD%AE"><span class="toc-text">VSCode配置</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8D%A2%E6%BA%90%EF%BC%88%E9%9D%9E%E5%BF%85%E8%A6%81%EF%BC%89"><span class="toc-text">换源（非必要）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E5%AE%89%E8%A3%85"><span class="toc-text">基础安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E9%98%BF%E9%87%8C%E4%BA%91yum%E6%BA%90%E5%AE%89%E8%A3%85kubelet-kubeadm-kubectl"><span class="toc-text">使用阿里云yum源安装kubelet kubeadm kubectl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85containerd"><span class="toc-text">安装containerd</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E5%B9%B3%E9%9D%A2%E8%8A%82%E7%82%B9-master"><span class="toc-text">初始化平面节点(master)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85CNI%E7%BD%91%E7%BB%9C%E6%8F%92%E4%BB%B6%EF%BC%8Ccalico-flannel-cilium-%E4%B8%89%E9%80%891"><span class="toc-text">安装CNI网络插件，calico flannel cilium 三选1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#demo%E6%B5%8B%E8%AF%95%E5%88%9B%E5%BB%BApod"><span class="toc-text">demo测试创建pod</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E5%8E%9F%E5%9B%A0%EF%BC%9A"><span class="toc-text">错误原因：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E6%8F%92%E4%BB%B6"><span class="toc-text">其他插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E6%A1%A3%E5%9C%B0%E5%9D%80"><span class="toc-text">文档地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#kubectl%E5%91%BD%E4%BB%A4"><span class="toc-text">kubectl命令</span></a></li></ol>
     </div>
 </div>
             
