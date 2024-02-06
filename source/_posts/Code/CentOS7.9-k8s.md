@@ -298,8 +298,17 @@ yum install docker-ce -y
 安装开启docker
 
 ```bash
-yum install docker -y
+sudo yum install -y yum-utils
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
 systemctl enable docker && systemctl start docker
+
+# 安装epel源
+yum install -y epel-release
+# 安装docker-compose，如果没有python3会安装python3
+yum install -y docker-compose
 ```
 
 
