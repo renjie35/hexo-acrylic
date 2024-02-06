@@ -4,7 +4,7 @@ date: '2023-12-26'
 categories: DevOps
 keywords: 'GitLab, Docker, ARM, x86'
 description: 介绍了如何在x86和ARM环境下配置和启动GitLab服务。
-cover: /images/docker.webp
+cover: /images/docker.png
 tags:
   - GitLab
   - Docker
