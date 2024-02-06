@@ -2,12 +2,13 @@
 title: 初始化新磁盘并挂载
 date: '2024-02-01'
 categories: Linux
-keywords: 磁盘初始化, 挂载, Linux
+keywords: '磁盘初始化, 挂载, Linux'
 description: 介绍了在Linux系统下初始化新磁盘并挂载的步骤。
 cover: /images/linux.jpg
 tags:
   - Linux
   - fdisk
+abbrlink: ce51fd35
 ---
 
 ## 初始化新磁盘

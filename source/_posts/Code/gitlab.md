@@ -2,12 +2,13 @@
 title: GitLab在x86和ARM环境下使用docker-compose部署
 date: '2023-12-26'
 categories: DevOps
-keywords: GitLab, Docker, ARM, x86
+keywords: 'GitLab, Docker, ARM, x86'
 description: 介绍了如何在x86和ARM环境下配置和启动GitLab服务。
 cover: /images/docker.webp
 tags:
   - GitLab
   - Docker
+abbrlink: c37dab1d
 ---
 ## x86环境（大多数服务器）
 ### 配置yaml
