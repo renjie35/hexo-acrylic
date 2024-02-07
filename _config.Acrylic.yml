@@ -68,40 +68,40 @@ hometop:
     icon:
       AE:
         img: /img/icon/ae.png
-        color: '#989bf8'
+        color: "#989bf8"
       Sketch:
         img: /img/icon/Sketch.png
-        color: '#ffffff'
+        color: "#ffffff"
       Docker:
         img: /img/icon/docker.png
-        color: '#57b6e6'
+        color: "#57b6e6"
       ps:
         img: /img/icon/ps.png
-        color: '#4082c3'
+        color: "#4082c3"
       FinalCutPro:
         img: /img/icon/FinalCutPro.png
-        color: '#ffffff'
+        color: "#ffffff"
       Python:
         img: /img/icon/Python.png
-        color: '#ffffff'
+        color: "#ffffff"
       Swift:
         img: /img/icon/Swift.png
-        color: '#eb6840'
+        color: "#eb6840"
       Principle:
         img: /img/icon/Principle.png
-        color: '#8f55ba'
+        color: "#8f55ba"
       illustrator:
         img: /img/icon/illustrator.png
-        color: '#f29e39'
+        color: "#f29e39"
       CSS3:
         img: /img/icon/CSS3.png
-        color: '#2c51db'
+        color: "#2c51db"
       JS:
         img: /img/icon/JS.png
-        color: '#f7cb4f'
+        color: "#f7cb4f"
       Git:
         img: /img/icon/git.png
-        color: '#df5b40'
+        color: "#df5b40"
 
   categoryGroup:
     G1:
@@ -122,20 +122,20 @@ hometop:
     title: 生活的点点滴滴
     url: /
     img: /img/hello.jpg
-    color: '#006a73'
+    color: "#006a73"
 
 # 个人卡片
 aside:
   home:
     # noSticky: ['about', 'flip']
-    noSticky: ['about']
-    Sticky: ['newestPost', 'allInfo']
+    noSticky: ["about"]
+    Sticky: ["newestPost", "allInfo"]
   post:
-    noSticky: ['about']
-    Sticky: ['newestPost']
+    noSticky: ["about"]
+    Sticky: ["newestPost"]
   page:
-    noSticky: ['about']
-    Sticky: ['newestPost', 'allInfo']
+    noSticky: ["about"]
+    Sticky: ["newestPost", "allInfo"]
 
   card:
     content: 这有关于<b>技术</b>、<b>科技</b>相关的问题和看法，还有对于动漫的一些<b>杂评</b>。<br>相信你可以在这里找到对你有用的知识和教程。
@@ -151,13 +151,13 @@ aside:
       url: /
 
   flip:
-    color: '#0099FF'
+    color: "#0099FF"
     face:
-      title: QQ群
-      desc: 加入官方QQ群与我们交流
+      title: 记录生活
+      desc: Neco的个人博客
     backface:
-      title: 扫一扫
-      desc: 获取最新信息和帮助
+      title: 记录生活
+      desc: Neco的个人博客
       img: /img/hello.jpg
 
   toc:
@@ -172,7 +172,7 @@ aside:
     uv: false
     updatetime: false
     runtimeenable: true
-    runtime: '2023-04-14 00:00:00'
+    runtime: "2023-04-14 00:00:00"
 
 # 页脚
 footer:
@@ -304,16 +304,15 @@ comment:
 # 插入额外代码 如：统计，广告等
 extends:
   head:
-  # 在head中插入
-  # google广告
-  - <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6196731311387769" crossorigin="anonymous"></script>
-  # google分析
-  - <script async src="https://www.googletagmanager.com/gtag/js?id=G-4Z2RNVGTPW"></script>
-  - <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-4Z2RNVGTPW');</script>
+    # 在head中插入
+    # google广告
+    - <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6196731311387769" crossorigin="anonymous"></script>
+    # google分析
+    - <script async src="https://www.googletagmanager.com/gtag/js?id=G-4Z2RNVGTPW"></script>
+    - <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-4Z2RNVGTPW');</script>
 
-  # 百度统计
-  - <script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?8e82a96ae358141110c3b185c605ee1a";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script>
-
+    # 百度统计
+    - <script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?8e82a96ae358141110c3b185c605ee1a";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script>
 
   body: # 在body中插入
 
